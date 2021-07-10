@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Vaccine Locations</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
 </head>
+
 <body>
     <header>
         <div>
@@ -23,191 +25,32 @@
     </header>
 
     <main>
-<!-- section1 -->
-        <section id="Ammansection">
-            <div id="Ammandiv">
-               <h5>Amman</h5> 
-            </div>
-            <div id="Ammanmap">
-                <iframe src="#" title="top">
-                </iframe>
-                <iframe src="#" title="middle">
-                </iframe>
-                <iframe src="#" title="bottom">
-                </iframe>
+        <div>
+            <form id="locationForm">
+                <fieldset>
+                    <label for="vaccineLocs">Please choose a Province:</label>
+                    <select id="vaccineLocs" name="vaccineLocs">
+                        <option value="Amman">Amman</option>
+                        <option value="Irbid">Irbid</option>
+                        <option value="Alsalt">Alsalt</option>
+                        <option value="Jerash">Jerash</option>
+                        <option value="Zarqa">Zarqa</option>
+                        <option value="Tafila">Tafila</option>
+                        <option value="Ajloun">Ajloun</option>
+                        <option value="Aqaba">Aqaba</option>
+                        <option value="Karak">Karak</option>
+                        <option value="Madaba">Madaba</option>
+                        <option value="Maan">Maan</option>
+                        <option value="Mafraq">Mafraq</option>
+                    </select>
 
-            </div>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+        <section id="locationsContainer">
+
         </section>
-
-        <!-- section2 -->
-        <section id="Irbidsection">
-            <div id="Irbiddiv">
-              <h5>Irbid</h5> 
-            </div>
-            <div id="Irbidmap">
-                <iframe src="#" title="top">
-                </iframe>
-                <iframe src="#" title="middle">
-                </iframe>
-                <iframe src="#" title="bottom">
-                </iframe>
-
-            </div>
-        </section>
-        <!-- section3 -->
-        <section id="Alsaltsection">
-            <div id="Alsaltdiv">
-            <h5>Al-salt</h5>  
-            </div>
-            <div id="Alsaltmap">
-                <iframe src="#" title="top">
-                </iframe>
-                <iframe src="#" title="middle">
-                </iframe>
-                <iframe src="#" title="bottom">
-                </iframe>
-
-            </div>
-        </section>
-
-        <!-- section4 -->
-        <section id="Jerashsection">
-           <div id="Jerashdiv">
-               <h5>Jerash</h5> 
-            </div> 
-            <div id="Jerashmap">
-                <iframe src="#" title="top">
-                </iframe>
-                <iframe src="#" title="middle">
-                </iframe>
-                <iframe src="#" title="bottom">
-                </iframe>
-
-            </div>
-        </section>
-<!-- section5 -->
-        <section id="Zarqasection">
-            <div id="Zarqadiv">
-              <h5>Al-Zarqa</h5>  
-            </div>
-            <div id="Zarqamap">
-                <iframe src="#" title="top">
-                </iframe>
-                <iframe src="#" title="middle">
-                </iframe>
-                <iframe src="#" title="bottom">
-                </iframe>
-
-            </div>
-        </section>
-        <!-- section6 -->
-        <section id="Tafilasection">
-            <div id="Tafiladiv">
-             <h5>Al-Tafila</h5>  
-            </div>
-            <div id="Tafilamap">
-                <iframe src="#" title="top">
-                </iframe>
-                <iframe src="#" title="middle">
-                </iframe>
-                <iframe src="#" title="bottom">
-                </iframe>
-
-            </div>
-        </section>
-        <!-- section7 -->
-        <section id="Ajlounsection">
-            <div id="Ajloundiv">
-             <h5>Ajloun</h5>   
-            </div>
-            <div id="Ajlounmap">
-                <iframe src="#" title="top">
-                </iframe>
-                <iframe src="#" title="middle">
-                </iframe>
-                <iframe src="#" title="bottom">
-                </iframe>
-
-            </div>
-        </section>
-
-        <!-- section8 -->
-        <section id="Aqabasection">
-            <div id="Aqabadiv">
-        <h5>Al-Aqaba</h5> 
-            </div>
-            <div id="Aqabamap">
-                <iframe src="#" title="top">
-                </iframe>
-                <iframe src="#" title="middle">
-                </iframe>
-                <iframe src="#" title="bottom">
-                </iframe>
-
-            </div>
-        </section>
-        <!-- section9 -->
-        <section id="Karaksection">
-            <div id="Karakdiv">
-            <h5> Al-Karak</h5>  
-            </div>
-            <div id="Karakmap">
-                <iframe src="#" title="top">
-                </iframe>
-                <iframe src="#" title="middle">
-                </iframe>
-                <iframe src="#" title="bottom">
-                </iframe>
-
-            </div>
-        </section>
-    <!-- section10 -->
-        <section id="Madabasection">
-            <div id="Madabadiv">
-           <h5>Madaba</h5>     
-            </div>
-            <div id="Madabamap">
-                <iframe src="#" title="top">
-                </iframe>
-                <iframe src="#" title="middle">
-                </iframe>
-                <iframe src="#" title="bottom">
-                </iframe>
-
-            </div>
-        </section>
-
-        <!-- section11 -->
-        <section id="Maansection">
-            <div id="Maandiv">
-           <h5> Maan</h5>    
-            </div>
-            <div id="Maanmap">
-                <iframe src="#" title="top">
-                </iframe>
-                <iframe src="#" title="middle">
-                </iframe>
-                <iframe src="#" title="bottom">
-                </iframe>
-
-            </div>
-        </section>
-        <!-- section12 -->
-        <section id="Mafraqsection">
-            <div id="Mafraqdiv">
-               <h5>Al-Mafraq</h5> 
-            </div>
-            <div id="Mafraqmap">
-                <iframe src="#" title="top">
-                </iframe>
-                <iframe src="#" title="middle">
-                </iframe>
-                <iframe src="#" title="bottom">
-                </iframe>
-
-            </div>
-        </section>
-        
     </main>
 
     <footer>
@@ -218,5 +61,8 @@
         </ul>
         &copy; Moros-v1 Coropration, All Rights Reserved.
     </footer>
+
+    <script src="../js/locations.js"></script>
 </body>
+
 </html>
