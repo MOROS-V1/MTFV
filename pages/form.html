@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +9,6 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
 </head>
-
 <body>
     <header>
         <div>
@@ -26,34 +24,30 @@
     <main>
         <section id="form">
             <h1>Tell us about your experience</h1>
-
             <form id=formFill>
                 <h3>Gender:</h3>
-                <label for="male">Male</label>
-                <input type="radio" name='gender' id="male" required>
-                <label for="female">Female</label>
-                <input type="radio" name='gender' id='female' required>
-
+                <label for="gender">Male</label>
+                <input type="radio" name='gender' id="gender" value ='male' required>
+                <label for="gender">Female</label>
+                <input type="radio" name='gender' id='gender' value='female' required>
                 <h3>Old:</h3>
                 <select name="Old" id="Old" required>
-                    <option value="18-39">18-39</option>
-                    <option value="40-59">40-59</option>
-                    <option value="60-90">60-90</option>
+                    <option value="18-39" id="age1">18-39</option>
+                    <option value="40-59" id="age2">40-59</option>
+                    <option value="60-90" id="age3">60-90</option>
                 </select>
-                
                 <h3>What type of vaccine did you take?</h3>
-                <input type="radio" name='type' id="visor" required>
-                <label for="visor">Visor</label>
-                <input type="radio" name='type' id="extraZeneca" required>
-                <label for="extraZeneca">Extra Zeneca</label>
-                <input type="radio" name='type' id="sinopharm " required>
-                <label for="sinopharm ">Sinopharm </label>
-                <input type="radio" name='type' id="biontech " required>
-                <label for="biontech ">Biontech </label>
-
+                <input type="radio" name='type' id="vaccine" value ="Visor" required>
+                <label for="vaccine">Visor</label>
+                <input type="radio" name='type' id="vaccine" value ="estraZeneca" required>
+                <label for="vaccine">Extra Zeneca</label>
+                <input type="radio" name='type' id="vaccine" value ="sinopharm " required>
+                <label for="vaccine">Sinopharm </label>
+                <input type="radio" name='type' id="vaccine" value ="biontech " required>
+                <label for="vaccine">Biontech </label>
+              
                 <h3>What is the symptoms you faced?</h3>
-
-                <input type="checkbox" id="temperatureRise">
+                <input type="checkbox" id="temperatureRise"  >
                 <label for="temperatureRise">Temperature rise</label>
                 <input type="checkbox" id="musclePain">
                 <label for="musclePain">Muscle pain</label>
@@ -70,12 +64,9 @@
             </br>
                 <label for="diseases">What diseases do you suffer from?</label>
                 <textarea id="diseases" ></textarea>
-
-                <input type="submit" value="Submit">
+                <input type="submit" id="submitbuttom" value="Submit">
             </form>
-
         </section>
-
         <section id='contact'>
             <h2>Contact information</h2>
         </hr>
@@ -84,12 +75,10 @@
                 <img class="cont" src="../icon/phone.png" alt='phone icon'>
                 <p>+962 65 200 230</p>
             </div>
-
             <div>
                 <img class="cont" src="../icon/gmail.png" alt="e-mail icon">
                 <p>diwan@moh.gov.jo</p>
             </div>
-
             <div>
                 <img class="cont" src="../icon/fax.png" alt="fax icon">
                 <p>5688373</p>
@@ -98,11 +87,9 @@
             <div id="media">
                 <img class="media" src="" alt="FB icon">
                 <img class="media" src="" alt="twitter icon">
-        
             </div>
             </div>
         </section>
-        
     </main>
     <footer>
         <ul>
@@ -112,6 +99,6 @@
         </ul>
         &copy; Moros-v1 Coropration, All Rights Reserved.
     </footer>
+    <script src="../js/form.js"></script>
 </body>
-
 </html>
