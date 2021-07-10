@@ -113,7 +113,3 @@ function randomizeQuestion() {
     }
     // console.log(chosenQ);
 }
-
-
-
-
