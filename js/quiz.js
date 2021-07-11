@@ -37,9 +37,12 @@ function renderQuestions() {
     
     let qDiv = document.createElement('div');
     for (let j = 0; j < chosenQ.length; j++) {
+        let qH = document.createElement('h3'); 
         let qP = document.createElement('p');
         form.appendChild(qDiv);
+        qDiv.appendChild(qH);
         qDiv.appendChild(qP);
+        qH.textContent = `Question: ${j+1}`;
         qP.textContent = questionsArray[chosenQ[j]].question;
         // console.log(qP.textContent);
         // console.log(chosenQ[j]);
@@ -62,7 +65,8 @@ function renderQuestions() {
         }
     }
     let btn = document.createElement('input');
-    btn.setAttribute('type', 'submit')
+    btn.setAttribute('type', 'submit');
+    btn.id= 'submit';
     qDiv.appendChild(btn);
     form.addEventListener('submit', handleSubmit);
 
@@ -86,16 +90,25 @@ function handleSubmit(event) {
         }
 
     }
+    Swal.fire({
+        title: `Your score is ${score} out of 10.`,
+        confirmButtonColor: '#F14C42',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      });
 
-
-    alert(`your score is ${score}`);
+    // alert(`your score is ${score}`);
 
 
     score = 0;
     // form.textContent= '';
     // let arrayOfIDs = [];
     // renderQuestions();
-    window.location.reload();
+    // window.location.reload();
 }
 renderQuestions();
 
