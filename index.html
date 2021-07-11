@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
+
 <body>
     <header>
         <div>
@@ -17,31 +20,80 @@
         </div>
         <nav>
             <ul>
-                <li><a  href="pages/about-us.html">About Us</a></li>
+                <li><a href="pages/about-us.html">About Us</a></li>
                 <li><a href="pages/generalinfo.html">General Info</a></li>
                 <li><a href="pages/location.html">Vaccine Centers</a></li>
                 <li><a style="color: #B50717;" href="/">Home</a></li>
             </ul>
         </nav>
-        
+
     </header>
     <main>
-        <section>
-            <img src="https://via.placeholder.com/512x256" alt="hero" id=>
+        <section id='heroContainer'>
+            <!-- <img src="https://via.placeholder.com/1024x512" alt="hero"> -->
         </section>
-        <section>
-            <h1>lorem</h1>
+        <section id='cardsSection'>
+            <h1>Input your data, view statistics or take a quiz!</h1>
             <div>
-                <a href="pages/form.html"><img src="https://via.placeholder.com/100" alt="go to form" id="formButton"></a>   
-                <a href="pages/statistics.html"><img src="https://via.placeholder.com/100" alt="go to satistics" id="satisticsButton"></a>
-                <a href="pages/quiz.html"><img src="https://via.placeholder.com/100" alt="go to quiz" id="quizButton"></a>
-                <a href="pages/generalinfo.html"><img src="https://via.placeholder.com/100" alt="go to general information" id="generalInfoButton"></a>
-                <a href="pages/location.html"><img src="https://via.placeholder.com/100" alt="go to general information" id="generalInfoButton"></a>
+                <ul>
+                    <li>
+                        <a href="pages/form.html">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="https://via.placeholder.com/512" alt="go to form" id="formButton" class='cardImage'>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>Submit Data</h1>
+                                        <p>Share the information about what type of vaccine you have taken, and if you had any side effects.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/statistics.html">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="https://via.placeholder.com/512" alt="go to statistics" id="statisticsButton" class='cardImage'>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>View Statistics</h1>
+                                        <p>View Statistics of people who took vaccines, which vaccine type and if they had any side effects.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/quiz.html">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="https://via.placeholder.com/512" alt="go to quiz" id="quizButton" class='cardImage'>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>Covid Quiz</h1>
+                                        <p>Test your knowledge about Covid-19 in a Quiz.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
+            
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit numquam rerum dolor at, assumenda itaque tempore minus nemo officiis quam molestias in odit cupiditate dicta qui ea reprehenderit autem quibusdam.
-                Nihil tenetur quidem quia deserunt tempora odit adipisci ex, aut et esse accusamus exercitationem placeat quaerat, voluptates delectus, sunt est! Tenetur reiciendis quae exercitationem saepe ullam asperiores nam quas molestias.
-                Vel repellendus corrupti modi explicabo, dolorum quos dolore corporis pariatur, debitis at sunt consequuntur numquam libero aperiam sequi tenetur et officiis ducimus. Reprehenderit accusamus aliquid consectetur repellendus facilis quam perspiciatis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit numquam rerum dolor at, assumenda itaque
+                tempore minus nemo officiis quam molestias in odit cupiditate dicta qui ea reprehenderit autem
+                quibusdam.
+                Nihil tenetur quidem quia deserunt tempora odit adipisci ex, aut et esse accusamus exercitationem
+                placeat quaerat, voluptates delectus, sunt est! Tenetur reiciendis quae exercitationem saepe ullam
+                asperiores nam quas molestias.
+                Vel repellendus corrupti modi explicabo, dolorum quos dolore corporis pariatur, debitis at sunt
+                consequuntur numquam libero aperiam sequi tenetur et officiis ducimus. Reprehenderit accusamus aliquid
+                consectetur repellendus facilis quam perspiciatis!
             </p>
         </section>
     </main>
@@ -51,7 +103,8 @@
             <li><img src="icon/helthML.png" alt="footer_logo2"></li>
             <li><img src="https://via.placeholder.com/90" alt="footer_logo3"></li>
         </ul>
-       <p> &copy; Moros-v1 Coropration, All Rights Reserved.</p>
+        <p> &copy; Moros-v1 Coropration, All Rights Reserved.</p>
     </footer>
 </body>
+
 </html>
