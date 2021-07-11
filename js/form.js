@@ -13,7 +13,7 @@ const visitorskey ='visitorskey';
 let subbutton = document.getElementById('formFill');
 subbutton.addEventListener('submit', handleSubmit);
 function handleSubmit(event) {
-    event.preventDefault();
+    // event.preventDefault();
     let age_group = event.target.Old.value;
     if (age_group == "18-39") {
         new Visitor(event.target.gender.value, "18-39", event.target.vaccine.value,
@@ -63,7 +63,19 @@ function handleSubmit(event) {
 
     const convertedArr = JSON.stringify(visitors);
     localStorage.setItem(visitorskey,convertedArr);
-console.log(convertedArr);
+    console.log(convertedArr);
+}
+// by musa'b
+function initilizeForm(){
 
+    if(localStorage.getItem(visitorskey) != null)
+    {
+        const loadedStatistics = JSON.parse(localStorage.getItem(visitorskey));
+        visitors = loadedStatistics;
+    }
+    else{
+        //the storage isn't created yet so proceed normally
+    }
 
 }
+initilizeForm();
