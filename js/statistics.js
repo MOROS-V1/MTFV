@@ -28,6 +28,9 @@ let g2_symptomsVals = [0,0,0,0,0,0,0];
 
 let g3_symptomsVals = [0,0,0,0,0,0,0];
 
+
+let inumber =0; 
+
 function distributeAgeGroups(){
 
     for (let i = 0; i < statisticsArray.length; i++) {
@@ -102,6 +105,9 @@ function viewCharts(label1,label2,vals1,vals2) {
     Chart.defaults.font.size = 17;
     // <canvas id="ageGroup1Chart" width="200" height="200"></canvas>
     const div = document.createElement('div');
+    div.id='chart'+inumber;
+    inumber++;
+
     const parent = document.getElementById('dataresult');
     parent.appendChild(div);
     const ctx = document.createElement('canvas');
@@ -135,6 +141,8 @@ function makeDoughnutChart(males,females) {
     Chart.defaults.color = '#0054c2';
     Chart.defaults.font.size = 17;
     const div = document.createElement('div');
+    div.id='chart'+inumber;
+    inumber++;
     const parent = document.getElementById('dataresult');
     parent.appendChild(div);
     const ctx = document.createElement('canvas');
@@ -142,16 +150,18 @@ function makeDoughnutChart(males,females) {
     ctx.width = 200;
     ctx.height = 200;
     var myChart = new Chart(ctx, {
-        type: 'doughnut',
+        type: 'pie',
         data: {
             labels: ['Males','Females'],
             datasets: [{
                 label: 'data',
                 data: [males,females],//vaccines taken at this age
                 backgroundColor: [
+                    'rgb(0, 128, 255)',	
                     'rgba(255, 99, 132, 0.2)'
                 ],
                 borderColor: [
+                    'rgb(0, 128, 255)',
                     'rgba(54, 162, 235, 1)',
                 ],
                 borderWidth: 1,
