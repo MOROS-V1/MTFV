@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+*{
+    font-family: 'Oswald', sans-serif;
+    color: #1D1D1D;
+    font-size: 37px;
+    box-sizing: border-box;
+}
+body,html{
+    min-height: 100vh;
+    position: relative;
+}
+
+
+
+header{
+   background-color: #ECECEC;
+    height: 156px;
+    border-bottom: solid #BFBFBF 10px;
+   
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 36px;
+    font-size: 21px;  
+    
+}
+header a{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: #1D1D1D;
+    font-size: 28px;
+    font-weight: bolder;
+    padding-bottom: 15px ;
+}
+header a:hover{
+    color: #B50717;
+    border-bottom: solid #B50717 8px ;
+}
+nav{
+    position: absolute;
+    right: 92px;
+    top: 69px;
+}
+#logo{
+    position: relative;
+    left: 67px;
+    top: -26px;
+    height: 225px;
+    width: 225px;
+}
