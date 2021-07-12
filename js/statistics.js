@@ -1,7 +1,6 @@
 'use strict'
 
 const statisticsArray = JSON.parse(localStorage.getItem('visitorskey'));
-
 let ageGroup1 = [];
 let ageGroup1MalesNumber = 0;
 let ageGroup1FemalesNumber = 0;
@@ -30,6 +29,7 @@ let g3_symptomsVals = [0,0,0,0,0,0,0];
 
 
 let inumber =0; 
+let divnumber = 0;
 
 function distributeAgeGroups(){
 
@@ -106,7 +106,8 @@ function viewCharts(label1,label2,vals1,vals2) {
     // <canvas id="ageGroup1Chart" width="200" height="200"></canvas>
     const div = document.createElement('div');
     div.id='chart'+inumber;
-    inumber++;
+    var barColors = ['rgba(	197	,245	,212)',   'rgba(	197	,245	,212)',  'rgba(	197	,245	,212)',  'rgba(	197	,245	,212)'
+    ,'rgba(243,	237,	214)','rgba(243,	237,	214)','rgba(243,	237,	214)','rgba(243,	237,	214)','rgba(243,	237,	214)','rgba(243,	237,	214)','rgba(243,	237,	214)'];
 
     const parent = document.getElementById('dataresult');
     parent.appendChild(div);
@@ -121,12 +122,9 @@ function viewCharts(label1,label2,vals1,vals2) {
             datasets: [{
                 label: 'data',
                 data: vals1.concat(vals2),//vaccines taken at this age
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(54, 162, 235, 1)',
-                ],
+                backgroundColor: barColors,
+                borderColor:barColors,
+
                 borderWidth: 1,
                 scaleFontColor: "#FFFFFF",
                 lineWidth: 25
@@ -140,11 +138,36 @@ function makeDoughnutChart(males,females) {
     Chart.defaults.borderColor = '#8D4AF6';
     Chart.defaults.color = '#0054c2';
     Chart.defaults.font.size = 17;
+    const parent = document.getElementById('dataresult');
+    const parentdiv = document.createElement('div');
+    const h2 = document.createElement('h2');
+    parentdiv.appendChild(h2);
+
+    if(divnumber == 0){
+
+        h2.textContent='Age group : 18-39';
+
+    }
+    else if(divnumber ==1){
+        
+        h2.textContent=' Age group : 40-59';
+    }
+    else if(divnumber ==2){
+        
+        h2.textContent=' Age group : 60-90';
+    }
+
+    parent.appendChild(parentdiv);
+    parentdiv.id='parentdiv'+divnumber;
+    divnumber++;
+    parentdiv.appendChild(document.getElementById('chart'+inumber));
+    console.log(document.getElementById('chart'+inumber));
+    inumber++;
+
     const div = document.createElement('div');
     div.id='chart'+inumber;
     inumber++;
-    const parent = document.getElementById('dataresult');
-    parent.appendChild(div);
+    parentdiv.appendChild(div);
     const ctx = document.createElement('canvas');
     div.appendChild(ctx);
     ctx.width = 200;
@@ -157,12 +180,12 @@ function makeDoughnutChart(males,females) {
                 label: 'data',
                 data: [males,females],//vaccines taken at this age
                 backgroundColor: [
-                    'rgb(0, 128, 255)',	
-                    'rgba(255, 99, 132, 0.2)'
+                    'rgb(29, 29, 29)  ',	
+                   'rgb(207, 41, 29)', 
                 ],
                 borderColor: [
-                    'rgb(0, 128, 255)',
-                    'rgba(54, 162, 235, 1)',
+                    'rgb(29, 29, 29) ',
+                    'rgb(207, 41, 29)',
                 ],
                 borderWidth: 1,
                 scaleFontColor: "#FFFFFF",
