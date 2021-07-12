@@ -35,18 +35,23 @@ let form = document.getElementById('quiz');
 function renderQuestions() {
     randomizeQuestion();
     
-    let qDiv = document.createElement('div');
+    let qSection = document.createElement('section');
     for (let j = 0; j < chosenQ.length; j++) {
+        let qH = document.createElement('h3'); 
         let qP = document.createElement('p');
-        form.appendChild(qDiv);
-        qDiv.appendChild(qP);
+        let div = document.createElement('div');
+        form.appendChild(qSection);
+        qSection.appendChild(div);
+        div.appendChild(qH);
+        div.appendChild(qP);
+        qH.textContent = `Question: ${j+1}`;
         qP.textContent = questionsArray[chosenQ[j]].question;
         // console.log(qP.textContent);
         // console.log(chosenQ[j]);
         const x = ['1', '2', '3', '4'];
         for (let i = 0; i < x.length; i++) {
             let qI = document.createElement('input');
-            qDiv.appendChild(qI);
+            div.appendChild(qI);
             qI.setAttribute('type', 'radio');
             qI.setAttribute('required', 'required');
             qI.setAttribute('name', `Q${chosenQ[j]}`);
@@ -56,14 +61,15 @@ function renderQuestions() {
             arrayOfIDs.push(qI.id);
             // console.log(qI.id);
             let qL = document.createElement('label');
-            qDiv.appendChild(qL);
+            div.appendChild(qL);
             qL.textContent = questionsArray[chosenQ[j]].answers[i];
             qL.setAttribute('for', `choice${i}.${chosenQ[j]}`)
         }
     }
     let btn = document.createElement('input');
-    btn.setAttribute('type', 'submit')
-    qDiv.appendChild(btn);
+    btn.setAttribute('type', 'submit');
+    btn.id= 'submit';
+    qSection.appendChild(btn);
     form.addEventListener('submit', handleSubmit);
 
 }
@@ -86,16 +92,25 @@ function handleSubmit(event) {
         }
 
     }
+    Swal.fire({
+        title: `Your score is ${score} out of 10.`,
+        confirmButtonColor: '#F14C42',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      });
 
-
-    alert(`your score is ${score}`);
+    // alert(`your score is ${score}`);
 
 
     score = 0;
     // form.textContent= '';
     // let arrayOfIDs = [];
     // renderQuestions();
-    window.location.reload();
+    // window.location.reload();
 }
 renderQuestions();
 

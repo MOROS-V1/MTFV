@@ -1,0 +1,46 @@
+ #parentdiv0,#parentdiv1,#parentdiv2{
+
+border: solid 1px gray;
+width: 90%;
+height: inherit;
+content: "";
+  display: table;
+  clear: both;
+  padding-bottom: 500px;
+  margin: 50px;
+
+  
+}
+
+#chart0,#chart2,#chart4{
+  float: left;
+  padding: 10px;
+  height: 300px;
+  width: 60%;
+}
+#chart1,#chart3,#chart5{
+  float: right;
+  padding: 8px;
+  height: 200px;
+  width: 25%;
+ 
+}
+
+main{
+  text-align: center;
+  margin-left: 100px;
+
+  
+}
+
+h2{
+  border: solid 1px black;
+  width: 144px;
+  height: 50px;
+  padding-top: 19px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+} 

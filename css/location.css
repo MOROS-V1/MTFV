@@ -1,0 +1,58 @@
+main{
+    text-align: center;
+}
+
+#locationsContainer{
+    height: 680px;
+    /* margin: 40px; */
+    /* padding-bottom: 80px; */
+    text-align: center;
+    width: 100%;
+    background-color: #bfbfbf3d;
+    position: relative;
+    border-top: solid #bfbfbfb9 10px;
+}
+#locationsContainer h2{
+    clear: both;
+    margin: 25px;
+    background-color: #bfbfbf3d;
+    padding: 25px;
+    display: block;
+    font-size: 40px;
+    font-weight: bolder;
+    /* width: 100%; */
+}
+#locationsContainer iframe{
+    border-radius: 25px;
+    border: solid #bfbfbf3d 5px ;
+}
+.gmap_canvas{
+    border-radius: 25px;
+}
+
+#formContainer form{
+    margin: 35px;
+}
+#formContainer form fieldset label,#formContainer form fieldset select{
+    font-size: 20px;
+}
+
+#submitButton {
+    margin-left: 50px;
+    top: 46px;
+    background-color: #F14C42;
+    border-style: none;
+    width: 345px;
+    height: 80px;
+    font-weight: bolder;
+    font-size: 30px;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #B50717;
+    color: #1D1D1D;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+#submitButton:active{
+    box-shadow: 0 2px 0 #B50717;
+  transform: translateY(3px);
+}

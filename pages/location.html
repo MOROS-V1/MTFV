@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/location.css">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
     </header>
 
     <main>
-        <div>
+        <div id='formContainer'>
             <form id="locationForm">
                 <fieldset>
                     <label for="vaccineLocs">Please choose a Province:</label>
@@ -46,7 +47,7 @@
                         <option value="Mafraq">Mafraq</option>
                     </select>
 
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" id='submitButton'>
                 </fieldset>
             </form>
         </div>
@@ -57,11 +58,11 @@
 
     <footer>
         <ul>
-            <li><img src="https://via.placeholder.com/90" alt="footer_logo1"></li>
+            <li><img src="../icon/UN.png" alt="footer_logo1"></li>
             <li><img src="../icon/helthML.png" alt="footer_logo2"></li>
-            <li><img src="https://via.placeholder.com/90" alt="footer_logo3"></li>
+            <li><img src="../icon/WHO.png" alt="footer_logo3"></li>
         </ul>
-        <p> &copy; Moros-v1 Coropration, All Rights Reserved.</p>    </footer>
+        <p> &copy; MOROS-V1 Corporation, All Rights Reserved.</p>       </footer>
 
     <script src="../js/locations.js"></script>
 </body>
