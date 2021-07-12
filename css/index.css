@@ -1,11 +1,11 @@
 #heroContainer{
     text-align: center;
     width: 100%;
-    height: 512px;
+    height: 575px;
     /* position: absolute; */
     z-index: 0;
-    background-image: url('https://via.placeholder.com/1024x512');
-    background-position: center;
+    background-image: url('../icon/hero.png');
+    /* background-color: transparent; */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -13,10 +13,10 @@
 #cardsSection{
     z-index: 1;
     text-align: center;
-    background-color: white;
+    /* background-color: white; */
     /* background-color: #bfbfbf48; */
-    border-top: solid #BFBFBF 10px;
-    border-bottom: solid #BFBFBF 10px;
+    /* border-top: solid #BFBFBF 10px; */
+    /* border-bottom: solid #BFBFBF 10px; */
     position: relative;
     position: sticky;
 }
@@ -44,6 +44,34 @@
     font-weight:500;
 }
 
+#formButton{
+  background-image: url('../icon/card1.png');
+  width: 100%;
+  height: 100%;
+  border: solid #BFBFBF 5px;
+  /* filter: blur(3px);
+  filter: grayscale(1);
+  filter: saturate(1.3); */
+}
+#statisticsButton{
+
+  background-image: url('../icon/card2.png');
+  width: 100%;
+  height: 100%;
+  border: solid #BFBFBF 5px;
+  /* filter: blur(3px);
+  filter: grayscale(1);
+  filter: saturate(1.3); */
+}
+#quizButton{
+  background-image: url('../icon/card3.png');
+  width: 100%;
+  height: 100%;
+  border: solid #BFBFBF 5px;
+  /* filter: blur(3px);
+  filter: grayscale(1);
+  filter: saturate(1.3); */
+}
 
 
 
