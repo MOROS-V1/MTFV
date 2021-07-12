@@ -35,13 +35,15 @@ let form = document.getElementById('quiz');
 function renderQuestions() {
     randomizeQuestion();
     
-    let qDiv = document.createElement('div');
+    let qSection = document.createElement('section');
     for (let j = 0; j < chosenQ.length; j++) {
         let qH = document.createElement('h3'); 
         let qP = document.createElement('p');
-        form.appendChild(qDiv);
-        qDiv.appendChild(qH);
-        qDiv.appendChild(qP);
+        let div = document.createElement('div');
+        form.appendChild(qSection);
+        qSection.appendChild(div);
+        div.appendChild(qH);
+        div.appendChild(qP);
         qH.textContent = `Question: ${j+1}`;
         qP.textContent = questionsArray[chosenQ[j]].question;
         // console.log(qP.textContent);
@@ -49,7 +51,7 @@ function renderQuestions() {
         const x = ['1', '2', '3', '4'];
         for (let i = 0; i < x.length; i++) {
             let qI = document.createElement('input');
-            qDiv.appendChild(qI);
+            div.appendChild(qI);
             qI.setAttribute('type', 'radio');
             qI.setAttribute('required', 'required');
             qI.setAttribute('name', `Q${chosenQ[j]}`);
@@ -59,7 +61,7 @@ function renderQuestions() {
             arrayOfIDs.push(qI.id);
             // console.log(qI.id);
             let qL = document.createElement('label');
-            qDiv.appendChild(qL);
+            div.appendChild(qL);
             qL.textContent = questionsArray[chosenQ[j]].answers[i];
             qL.setAttribute('for', `choice${i}.${chosenQ[j]}`)
         }
@@ -67,7 +69,7 @@ function renderQuestions() {
     let btn = document.createElement('input');
     btn.setAttribute('type', 'submit');
     btn.id= 'submit';
-    qDiv.appendChild(btn);
+    qSection.appendChild(btn);
     form.addEventListener('submit', handleSubmit);
 
 }

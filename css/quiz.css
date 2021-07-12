@@ -1,10 +1,11 @@
 main {
-    margin: 75px 150px;
     text-align: center;
 }
-body{
+
+body {
     font-size: 28px;
 }
+
 h1 {
     font-weight: bold;
     margin: 100px;
@@ -13,18 +14,15 @@ h1 {
 
 h3 {
     text-align: left;
-    background-color: #f14c4221;
-    padding: 18px 50px;
-    border: solid #f14c42b0 1px;
     /* border-radius: 10px; */
-    margin: 51px 0 0 0;
+    margin: -11px 0 14px 25px;
 }
 
 #quiz div p {
     margin: 33px;
-    border: dashed gray;
-    border-radius: 10px;
-    background-color: #ECECEC;
+    /* border: none gray; */
+    /* border-radius: 10px; */
+    background-color: #80808021;
     padding: 27px;
 }
 
@@ -34,11 +32,13 @@ label {
     color: #b507188f;
     cursor: pointer;
 }
-label:hover{
+
+label:hover {
     color: #000;
     text-shadow: 0 0 50px #000;
 }
-label:focus{
+
+label:focus {
     color: #000;
     text-shadow: 0 0 50px #000;
 }
@@ -51,7 +51,7 @@ input {
 #submit {
     display: block;
     position: relative;
-    left: 25%;
+    left: 36%;
     top: 46px;
     background-color: #F14C42;
     border-style: none;
@@ -65,14 +65,37 @@ input {
     cursor: pointer;
     transition: all .1s linear;
 }
-#submit:active{
+
+#submit:active {
     box-shadow: 0 2px 0 #B50717;
-  transform: translateY(3px);
+    transform: translateY(3px);
 }
-#quiz{
+
+/* #quiz{
     border: solid 1px;
     border-radius: 6px;
     background-color: #8080802e;
     padding: 54px;
     margin: 120px;
+} */
+
+/* input:checked ~ label {
+    color: #000;
+    text-shadow: 0 0 50px #000;
+  } */
+
+section {
+    border-top: solid #cf291d5e 70px;
+    margin: 75px 150px;
+    padding-top: 57px;
+}
+
+section div {
+    background-color: #ECECEC;
+    margin: 22px 0;
+    padding: 29px 0;
+}
+
+main image {
+    margin: 0px;
 }
