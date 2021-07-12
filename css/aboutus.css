@@ -1,0 +1,149 @@
+main{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#heroContainer{
+    /* text-align: center; */
+    width: 100%;
+    height: 575px;
+    z-index: 0;
+    background-image: url('https://via.placeholder.com/1024x512');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main h1{
+    margin: 25px;
+    font-size: 50px;
+    font-weight: 1px;
+}
+
+
+main ul li img{
+    height: 100%;
+    width: 100%;
+}
+main ul li,#leaderContainer{
+    margin: 25px 40px;
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+}
+#fbContainer{
+    margin: 25px;
+    margin-top: 50px;
+}
+#feedbackButton {
+    text-decoration: none;
+    /* display: block; */
+    /* position: relative; */
+    /* left: 36%; */
+    /* top: 46px; */
+    text-align: center;
+    background-color: #F14C42;
+    border-style: none;
+    width: 345px;
+    height: 80px;
+    font-weight: bolder;
+    font-size: 30px;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #B50717;
+    color: #1D1D1D;
+    cursor: pointer;
+    transition: all .1s linear;
+    padding: 15px 50px;
+}
+
+#submit:active {
+    box-shadow: 0 2px 0 #B50717;
+    transform: translateY(3px);
+}
+#leader{
+    background-image: url('../icon/musa\'b.jpg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#member1{ /*Oqla alrefai */
+    background-image: url('../icon/oqla.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+#member2{ /*Samah hamed*/
+    background-image: url('../icon/samah.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}   
+#member3{ /*Rawnaq Aburumman*/
+    background-image: url('../icon/rawnaq.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#member4{ /*Omar Nabeel*/
+    background-image: url('../icon/omar.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: rgba(191, 191, 191, 0.699);
+    border: solid #1D1D1D 2px;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #FF6A61;
+    color: white;
+    border: solid #BFBFBF 2px;
+    transform: rotateY(180deg);
+  }
+  .flip-card-back p{
+      font-size: 35px;
+  }
