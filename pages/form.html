@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,10 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <header>
         <div>
@@ -25,72 +29,123 @@
     </header>
     <main>
         <section id="form">
-            <h1>Tell us about your experience</h1>
+
             <form id=formFill>
-                <h3>Gender:</h3>
-                <label for="gender">Male</label>
-                <input type="radio" name='gender' id="gender" value ='male' required>
-                <label for="gender">Female</label>
-                <input type="radio" name='gender' id='gender' value='female' required>
-                <h3>Old:</h3>
-                <select name="Old" id="Old" required>
-                    <option value="18-39" id="age1">18-39</option>
-                    <option value="40-59" id="age2">40-59</option>
-                    <option value="60-90" id="age3">60-90</option>
-                </select>
-                <h3>What type of vaccine did you take?</h3>
-                <input type="radio" name='type' id="vaccine" value ="visor" required>
-                <label for="vaccine">Visor</label>
-                <input type="radio" name='type' id="vaccine" value ="estraZeneca" required>
-                <label for="vaccine">EstraZeneca</label>
-                <input type="radio" name='type' id="vaccine" value ="sinopharm" required>
-                <label for="vaccine">Sinopharm </label>
-                <input type="radio" name='type' id="vaccine" value ="biontech" required>
-                <label for="vaccine">Biontech </label>
-              
-                <h3>What are the symptoms you faced?</h3>
-                <input type="checkbox" id="temperatureRise"  >
-                <label for="temperatureRise">Temperature rise</label>
-                <input type="checkbox" id="musclePain">
-                <label for="musclePain">Muscle pain</label>
-                <input type="checkbox" id="sensitivityOrShortnessOfBreath">
-                <label for="sensitivityOrShortnessOfBreath">Sensitivity Or Shortness Of Breath</label>
-                <input type="checkbox" id="fatigue">
-                <label for="fatigue">Fatigue</label>
-                <input type="checkbox" id="headache">
-                <label for="headache">Headache</label>
-                <input type="checkbox" id="shudder">
-                <label for="shudder">Shudder</label>
-                <input type="checkbox" id="jointPain">
-                <label for="jointPain">Joint pain</label>
-            </br>
-                <label for="diseases">What diseases do you suffer from?</label>
-                <textarea id="diseases" ></textarea>
-                <input type="submit" id="submitbuttom" value="Submit">
+                <fieldset>
+                    <legend>Tell us about your experience:</legend>
+
+                    <div id="name">
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname"value='fullname'>
+                    </div><br>
+
+                    <div>
+
+                        <h3>Gender:</h3>
+                            <br>
+                            <input type="radio" name='gender' id="gender" value='male' required>
+                            <label for="gender">Male</label>
+                           <br>
+                            <input type="radio" name='gender' id='gender' value='female' required>
+                            <label for="gender" id="gender">Female</label>
+
+
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <h3 id="Old">Old:</h3>
+                        <select name="Old" id="Old" required><br>
+                            <option value="18-39" id="age1">18-39</option>
+                            <option value="40-59" id="age2">40-59</option>
+                            <option value="60-90" id="age3">60-90</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <h3>What type of vaccine did you take?</h3></br>
+                        <input type="radio" name='type' id="vaccine" value="visor" required>
+                        <label for="vaccine">Visor</label>
+                        </br>
+                        <input type="radio" name='type' id="vaccine" value="estraZeneca" required>
+                        <label for="vaccine">EstraZeneca</label>
+
+
+                        <br>
+                        <input type="radio" name='type' id="vaccine" value="sinopharm" required>
+                        <label for="vaccine">Sinopharm </label>
+
+                        <br>
+
+                        <input type="radio" name='type' id="vaccine" value="biontech" required>
+                        <label for="vaccine">Biontech </label>
+
+                    </div>
+                    <br>
+                    <div id="chbox">
+                        <h3>What are the symptoms you faced?</h3>
+
+                        <input type="checkbox" class="checkbox" id="temperatureRise">
+                        <label for="temperatureRise">Temperature rise</label>
+                        <br>
+                        <input type="checkbox" class="checkbox" id="musclePain">
+                        <label for="musclePain">Muscle pain</label>
+                        <br>
+                        <input type="checkbox" class="checkbox" id="fatigue">
+                        <label for="fatigue">Fatigue</label>
+                        <br>
+                        <input type="checkbox" class="checkbox" id="headache">
+                        <label for="headache">Headache</label>
+                        <br>
+                        <input type="checkbox" class="checkbox" id="shudder">
+                        <label for="shudder">Shudder</label>
+                        <br>
+                        <input type="checkbox" class="checkbox" id="jointPain">
+                        <label for="jointPain">Joint pain</label>
+                        <br>
+                        <input type="checkbox" class="checkbox" id="sensitivityOrShortnessOfBreath">
+                        <label for="sensitivityOrShortnessOfBreath">Sensitivity Or Shortness Of Breath</label>
+                        <br>
+                    </div>
+                    </br>
+                    <div>
+                        <label id="diseases" for="diseases">What diseases do you suffer from?</label>
+                        <textarea id="textarea"></textarea>
+                        <div>
+                        <input type="submit" id="submitbuttom" value="Submit">
+                        </div>
+                    </div>
+                    </br>
+                </fieldset>
             </form>
         </section>
+
         <section id='contact'>
             <h2>Contact information</h2>
-        </hr>
-            <div id="contactUs">
+            <section>
                 <div>
-                <img class="cont" src="../icon/phone.png" alt='phone icon'>
-                <p>+962 65 200 230</p>
-            </div>
-            <div>
-                <img class="cont" src="../icon/gmail.png" alt="e-mail icon">
-                <p>diwan@moh.gov.jo</p>
-            </div>
-            <div>
-                <img class="cont" src="../icon/fax.png" alt="fax icon">
-                <p>5688373</p>
-            </div>
-        </hr>
-            <div id="media">
-                <img class="media" src="" alt="FB icon">
-                <img class="media" src="" alt="twitter icon">
-            </div>
-            </div>
+                    <img id="log" src="../icon/Facebook.png">
+                    <p>facebook account</p>
+                </div>
+                <div>
+                    <img id="log" src="../icon/Instagram.png">
+                    <p>Instagram account</p>
+                </div>
+                <br>
+                <div>
+                    <img id="log" src="../icon/phone.png">
+                    <p>+962 65 200 230</p>
+                </div>
+                <div>
+                    <img id="log" src="../icon/gmail.png">
+                    <p>diwan@moh.gov.jo</p>
+                </div>
+                <div>
+                    <img id="log" src="../icon/fax.png">
+                    <p>5688373</p>
+                </div>
+            </section>
         </section>
     </main>
     <footer>
@@ -102,4 +157,5 @@
         <p> &copy; MOROS-V1 Corporation, All Rights Reserved.</p>    </footer>
     <script src="../js/form.js"></script>
 </body>
+
 </html>

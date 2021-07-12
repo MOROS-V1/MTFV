@@ -1,0 +1,218 @@
+fieldset{
+    margin: 28px 18px;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    width: 990;
+    height: 1080px;
+}
+legend {
+    font-size: 1.25em;
+    padding: 0 .25em;
+    color: #999;
+}
+label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+
+form{
+    font-size: 20px;
+    display: block;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1;
+    width: 1000px;
+    height: 1100px;
+    margin-bottom: 20px;
+}
+
+form h3{
+    margin-bottom: 20px;
+}
+
+#log{
+      width: 50px;
+      height: 50px;
+      margin-top: 40px;
+      margin-left: 10px;
+     
+  }
+*{
+      font-size: large;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #name{
+    display: flex;
+    width: fit-content;
+ 
+  }
+  #name input{
+
+  }
+  #name label{
+    float: left;
+    padding-right: 200px;
+  }
+ #contact{
+   
+    border-right: 5px solid  #cbced1;
+    border-bottom: 5px solid  #cbced1 ;
+    border-top: 5px solid  #cbced1 ;
+    border-left: 5px solid  #cbced1;
+    padding: 0 20px;
+    margin-left: 50px;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 200px;
+    padding-bottom: 30px;
+    font-size: 15px;
+    margin-top: 40px;
+    margin-bottom: 700px;
+
+ }
+ #contact p{
+  float:right;
+ }
+ header,main{
+     display: flex;
+ }
+ main{
+     padding-left: 5px;
+ }
+ #diseases{
+     padding-top: 20px;
+     display: flex;
+ }
+ div{
+     display: block;
+
+ }
+ div p{
+     padding-top: 50px;
+     padding-left: 40px;
+ }
+ #submitbuttom{
+    float: right;
+    margin-right:140px ;
+    background-color: #F14C42;
+    border-style: none;
+    width: 200px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #B50717;
+    color: #1D1D1D;
+    cursor: pointer;
+    transition: all .1s linear;
+    box-shadow: 0 2px 0 #B50717;
+    transform: translateY(3px);
+}
+
+ #textarea{
+    height: 150px;
+    width: 300px;
+     resize: none;
+ }
+ section section div{
+margin: -10px;
+    }
+#Old{
+    display: inline-block;
+}
+.choice{
+  float:left;
+}
+#chbox {
+    display: block;
+   
+}
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: 0;
+  opacity: 0.01;
+}
+[type="checkbox"]:not(:checked) + label,
+  [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 2.3em;
+    font-size: 1.05em;
+    line-height: 1.7;
+    cursor: pointer;
+  }
+  [type="checkbox"]:not(:checked) + label:before,
+  [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.4em;
+    height: 1.4em;
+    border: 1px solid #aaa;
+    background: #FFF;
+    border-radius: .2em;
+    box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 rgba(203, 34, 237, .2);
+    -webkit-transition: all .275s;
+        transition: all .275s;
+  }
+h2{
+  font-size: larger;
+}
+
+  [type="checkbox"]:not(:checked) + label:after,
+  [type="checkbox"]:checked + label:after {
+    content: '✕';
+    position: absolute;
+    top: .525em;
+    left: .18em;
+    font-size: 1.375em;
+    color: #CB22ED;
+    line-height: 0;
+    -webkit-transition: all .2s;
+        transition: all .2s;
+  }
+
+ 
+  [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0) rotate(45deg);
+        transform: scale(0) rotate(45deg);
+  }
+
+  [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0);
+  }
+
+
+   [type="checkbox"]:disabled:not(:checked) + label:before, 
+  [type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #e9e9e9;
+  } 
+
+  [type="checkbox"]:disabled:checked + label:after {
+    color: #777; 
+  }
+
+  [type="checkbox"]:disabled + label {
+    color: #aaa;
+  }
+
+  
+  [type="checkbox"]:checked:focus + label:before,
+  [type="checkbox"]:not(:checked):focus + label:before {
+    box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 6px rgba(203, 34, 237, .2);
+  } 
+form div{
+  /* border-right: 5px solid  #cbced1;
+  border-bottom: 5px solid  #cbced1 ;
+  border-top: 5px solid  #cbced1 ;
+  border-left: 5px solid  #cbced1; */
+  padding-left:20px;
+  background-color:rgba(192, 192, 192, 0.11);
+}
