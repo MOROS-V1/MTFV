@@ -96,6 +96,7 @@ section div {
     padding: 29px 0;
 }
 
-main image {
+main img {
+    width: 100%;
     margin: 0px;
 }

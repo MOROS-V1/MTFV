@@ -1,0 +1,67 @@
+
+#profile div{
+    width: 53%;
+    border-radius: 15px;
+    margin: 45px 146px;
+    background-color: #BFBFBF;
+    box-shadow: 1px 1px 12px;
+}
+
+#profile div img {
+    margin: 7px;
+    width: 13%;
+    position: relative;
+    left: 60px;
+    top: 26px;
+    border-radius: 50%;
+    background-color: #ECECEC;
+}
+
+#profile div h3 {
+    position: relative;
+    left: 195px;
+    top: -40px;
+    font-size: 33px;
+    font-weight: bold;
+}
+#profile div p {
+    margin: 0px;
+   
+    width: 386px;
+    position: relative;
+    left: 314px;
+    top: -12px;
+}
+main img {
+    width: 100%;
+}
+
+#sideBar {
+    width: 120px;
+    height: 100vh;
+    position: sticky;
+    z-index: -1;
+    top: 19px;
+    left: 10px;
+    background: #930719;
+    float: left;
+    /* width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #930719;
+  overflow-x: hidden;
+  padding: 8px 0; */
+    /* width: 120px;
+    background-color: ;
+    height: 50%;
+    position: absolute;
+    left: 8px;*/
+} 
+
+main h1 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+}
