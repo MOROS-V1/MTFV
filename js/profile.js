@@ -17,6 +17,8 @@ for (let i = 0; i < statisticsArray.length; i++) {
     div.appendChild(m);
     let userName = document.createElement('h3');
     div.appendChild(userName);
+    let type = document.createElement('h4');
+    div.appendChild(type);
     let date = document.createElement('p');
     div.appendChild(date);
     //eElement.insertBefore(newFirstElement, eElement.firstChild);
@@ -24,12 +26,14 @@ for (let i = 0; i < statisticsArray.length; i++) {
     if (statisticsArray[i].gender == 'male') {
         profileArray.push(statisticsArray[i]);
         m.setAttribute('src', '../icon/male.png');
+        type.textContent =statisticsArray[i].typeVaccine;
         userName.textContent = statisticsArray[i].fullname;
         date.textContent = statisticsArray[i].date;
 
     } else if (statisticsArray[i].gender == 'female') {
         profileArray.push(statisticsArray[i]);
         m.setAttribute('src', '../icon/female.png');
+        type.textContent =statisticsArray[i].typeVaccine;
         userName.textContent = statisticsArray[i].fullname;
         date.textContent = statisticsArray[i].date;
     }
