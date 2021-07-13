@@ -35,8 +35,8 @@ body {
  button {
     display: block;
     position: relative;
-    left: 67%;
-    top: 52px;
+    left: 56%;
+    top: 19px;
     background-color: #F14C42;
     border-style: none;
     width: 167px;
@@ -57,14 +57,16 @@ body {
 
 
  fieldset {
-
-    -moz-box-shadow: inset -3px -3px 10px  #BFBFBF;
+border-right: solid gray;
+    /* -moz-box-shadow: inset -3px -3px 10px  #BFBFBF;
     -webkit-box-shadow: inset -3px -3px 10px  #BFBFBF;
-    box-shadow: inset -3px -3px 10px  #BFBFBF;
+    box-shadow: inset -3px -3px 10px  #BFBFBF; */
     border-radius: 15px;
     font-size: large;
     font-weight: bold;
-    height: 343px;
+    height: 431px;
+
+    background-color:  #ECECEC;
  }
  
  h3 {
@@ -100,22 +102,22 @@ margin:10px
 }
 
 
-#results{
+#results {
     overflow-y: scroll;
     margin-right: 20px;
     width: 50%;
-   padding-left: 20px;
-    float:right;  
-   height:480px;
-  margin:10px;
-  text-align: left;
-   font-size: large;
-  -moz-box-shadow: inset -3px -3px 10px  #BFBFBF;
-  -webkit-box-shadow: inset -3px -3px 10px  #BFBFBF;
-  box-shadow: inset -3px -3px 10px #BFBFBF;
-  border-radius: 15px;
-  
-  
+    padding-left: 20px;
+    float: right;
+    height: 480px;
+    margin: 10px;
+    text-align: left;
+    font-size: large;
+    border-radius: 15px;
+    background-color: #ECECEC;
+    padding-top: 20px;
+    position: relative;
+    top: -49px;
+    border-left: solid gray;
 }
 footer{
     clear: both;
@@ -123,12 +125,13 @@ footer{
     bottom: 0;
     width: 100%;
 }
-#container {
-   padding:40px;
-    height:800px;
-    
-}
 
+#container {
+    padding: 40px;
+    height: 800px;
+    margin-top: 72px;
+    background-color:#ECECEC ;
+}
 
 .list {
     border-bottom: #B50717 solid  ;
@@ -153,23 +156,24 @@ p {
 legend {
     float: left;
     font-size: xx-large;
-    font-weight:bold ;
+    font-weight: bold;
     color: #B50717;
-    
-
-
+    position: relative;
+    top: -155px;
+    left: -42px;
 }
-   h2{
-    
-    font-size: x-large;
-    font-weight:bold ;
+h2 {
+    font-size: xx-large;
+    font-weight: bold;
     color: black;
-     border-bottom: solid gray ;
-     margin-top: 10px;
-     margin-bottom: 10px;
-     padding-bottom: 5px;
-     
-   }
+    /* border-bottom: solid gray; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    position: relative;
+    left: 59px;
+    top: -101px;
+}
    
    button:hover {background-color: #B50717}
    button:active {
@@ -179,6 +183,30 @@ legend {
   }
 
   input {
-      border-radius: 10px;
+    border-radius: 4px;
   }
  
+  #feedbacktext {
+    width: 431px;
+    height: 170px;
+    position: relative;
+    left: 10px;
+}
+label {
+    position: relative;
+    left: -346px;
+    top: 11px;
+}
+input {
+    border-radius: 4px;
+    position: relative;
+    left: -7px;
+    top: -9px;
+}
+#name {
+    position: relative;
+    left: -346px;
+    top: 11px;
+    width: 226px;
+    height: 30px;
+}

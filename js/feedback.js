@@ -31,7 +31,7 @@ function handlesumbit(event) {
 
     event.preventDefault();
     let newname = event.target.name.value;
-    let newtext = event.target.text.value;
+    let newtext = event.target.feedbacktext.value;
     //console.log(newname);
     //console.log(newtext);
 
@@ -55,9 +55,12 @@ function renderdata(name1, paragraph) {
     let d = new Date();
     let section1 = document.getElementById("results");
     let div = document.createElement('div');
+   
     section1.appendChild(div);
+   
     div.className ="list";
     let header = document.createElement('h3');
+    
     div.appendChild(header);
     header.textContent = name1;
     let header2 =document.createElement('h5');
@@ -67,7 +70,9 @@ function renderdata(name1, paragraph) {
     let para = document.createElement('p');
     div.appendChild(para);
     para.textContent = paragraph;
-
+   
+  //  section1.insertBefore(div ,section1[1]) ;
+  insertAfter(section1.firstChild, div);
 
 }
 
@@ -107,10 +112,10 @@ console.log(feedbackarray);
 
 
 function renderloadedinfo() {
-    if (feedbackarray.length <= 8){
-        console.log(feedbackarray.length)
-        localStorage.clear();
-    }
+    // if (feedbackarray.length <= 8){
+    //     console.log(feedbackarray.length)
+    //     localStorage.clear();
+    // }
 
     let d = new Date();
     for (let i = 0; i < feedbackarray.length; i++) {
@@ -121,7 +126,7 @@ function renderloadedinfo() {
         div.className ="list";
         section1.appendChild(div);
         let header = document.createElement('h3');
-        div.appendChild(header);
+         div.appendChild(header);
         header.textContent = feedbackarray[i].name;
         let header2 =document.createElement('h5');
         div.appendChild(header2);
@@ -130,12 +135,19 @@ function renderloadedinfo() {
         let para = document.createElement('p');
        div.appendChild(para);
         para.textContent = feedbackarray[i].text;
-        
-      
+        //section1.insertBefore(div ,section1[1]) ;
+        insertAfter(section1.firstChild, div);
 
 
 }
 
 }
+
+function insertAfter(referenceNode, newNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+  }
 
 //getinfo();
+
+
+//header.insertBefore(div , header);
