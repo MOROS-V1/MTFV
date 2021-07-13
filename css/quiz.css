@@ -43,9 +43,10 @@ label:focus {
     text-shadow: 0 0 50px #000;
 }
 
-input {
+[type="radio"] {
     position: relative;
     left: 116px;
+    opacity: 0;
 }
 
 #submit {
@@ -99,4 +100,9 @@ section div {
 main img {
     width: 100%;
     margin: 0px;
+}
+
+:checked + label{
+    color: #000;
+    text-shadow: 0 0 50px #000;
 }
