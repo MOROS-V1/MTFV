@@ -1,13 +1,15 @@
  #parentdiv0,#parentdiv1,#parentdiv2{
 
 border-radius: 25px;
-width: 90%;
-height: inherit;
+width:60%;
+height: 5%;
 content: "";
   display: table;
   clear: both;
-  padding-bottom: 500px;
-  margin: 50px;
+  padding-bottom: 1%;
+  margin:5%;
+  margin-left: 20%;
+  margin-right: 20%;
   background-color: #ECECEC;
 
   
@@ -16,20 +18,22 @@ content: "";
 #chart0,#chart2,#chart4{
   float: left;
   padding: 10px;
-  height: 300px;
+  height: 80%;
   width: 60%;
+
+  
 }
 #chart1,#chart3,#chart5{
   float: right;
-  padding: 8px;
-  height: 200px;
+  padding:2%;
+  height: 50%;
   width: 25%;
  
 }
 
 main{
   text-align: center;
-  margin-left: 100px;
+
 
   
 }
@@ -40,11 +44,13 @@ body{
 
 
 h2 {
+ 
   width: 144px;
   height: 50px;
-  padding-top: 20px;
+  padding-top: 14px;
   text-align: center;
-  margin-top: 24px;
+  margin-top: 31px;
+  margin-bottom: 0px;
   margin-left: 30px;
   font-size: 20px;
   font-weight: bold;
