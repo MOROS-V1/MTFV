@@ -1,6 +1,6 @@
  #parentdiv0,#parentdiv1,#parentdiv2{
 
-border: solid 1px gray;
+border-radius: 25px;
 width: 90%;
 height: inherit;
 content: "";
@@ -8,6 +8,7 @@ content: "";
   clear: both;
   padding-bottom: 500px;
   margin: 50px;
+  background-color: #ECECEC;
 
   
 }
@@ -32,15 +33,20 @@ main{
 
   
 }
+body{
+  background-color: rgba(95, 158, 160, 0.103);
+}
 
-h2{
-  border: solid 1px black;
+
+
+h2 {
   width: 144px;
   height: 50px;
-  padding-top: 19px;
+  padding-top: 20px;
   text-align: center;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin-top: 24px;
+  margin-left: 30px;
   font-size: 20px;
   font-weight: bold;
-} 
+  background-color: #e22d20ab;
+}

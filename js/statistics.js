@@ -100,14 +100,15 @@ renderAgeGroup(ageGroup3,ageGroup3MalesNumber,ageGroup3FemalesNumber,g3_vaccineV
 
 function viewCharts(label1,label2,vals1,vals2) {
     // Chart.defaults.global.defaultFontColor = "#fff";
-    Chart.defaults.borderColor = '#8D4AF6';
-    Chart.defaults.color = '#0054c2';
+    Chart.defaults.borderColor = '#8c8c8c';
+    Chart.defaults.color = '#3C3C3C';
+    
     Chart.defaults.font.size = 17;
     // <canvas id="ageGroup1Chart" width="200" height="200"></canvas>
     const div = document.createElement('div');
     div.id='chart'+inumber;
-    var barColors = ['rgba(	197	,245	,212)',   'rgba(	197	,245	,212)',  'rgba(	197	,245	,212)',  'rgba(	197	,245	,212)'
-    ,'rgba(243,	237,	214)','rgba(243,	237,	214)','rgba(243,	237,	214)','rgba(243,	237,	214)','rgba(243,	237,	214)','rgba(243,	237,	214)','rgba(243,	237,	214)'];
+    var barColors = ['rgb(231, 86, 75)', 'rgb(231, 86, 75)','rgb(231, 86, 75)','rgb(231, 86, 75)'
+    ,'#3C3C3C','#3C3C3C','#3C3C3C','#3C3C3C','#3C3C3C','#3C3C3C','#3C3C3C'];
 
     const parent = document.getElementById('dataresult');
     parent.appendChild(div);
@@ -115,22 +116,39 @@ function viewCharts(label1,label2,vals1,vals2) {
     div.appendChild(ctx);
     ctx.width = 200;
     ctx.height = 200;
+    ctx.font = "semibold 20px 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif";
+
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
+            
             labels: label1.concat(label2),
             datasets: [{
-                label: 'data',
+                label:'data',
                 data: vals1.concat(vals2),//vaccines taken at this age
                 backgroundColor: barColors,
                 borderColor:barColors,
-
                 borderWidth: 1,
                 scaleFontColor: "#FFFFFF",
-                lineWidth: 25
-            }
+                lineWidth: 25,       
+            },
+                       
             ]
-        },
+        }, 
+        options: {
+            plugins: {  // 'legend' now within object 'plugins {}'
+              legend: {
+                labels: {
+                  color: "black",  // not 'fontColor:' anymore
+                  // fontSize: 18  // not 'fontSize:' anymore
+                  font: {
+                    size: 18 // 'size' now within object 'font {}'
+                  }
+                }
+              }
+            }},
+              
+    
     });
 }
 function makeDoughnutChart(males,females) {
@@ -180,18 +198,39 @@ function makeDoughnutChart(males,females) {
                 label: 'data',
                 data: [males,females],//vaccines taken at this age
                 backgroundColor: [
-                    'rgb(29, 29, 29)  ',	
-                   'rgb(207, 41, 29)', 
+                    'rgb(102, 102, 102)',	
+                    'rgb(237, 128, 120)'
+                    , 
                 ],
+                Fontcolor :[
+'black'
+                ],
+                
+
                 borderColor: [
-                    'rgb(29, 29, 29) ',
-                    'rgb(207, 41, 29)',
+                    'rgb(102, 102, 102)',
+                    'rgb(237, 128, 120)',
                 ],
+
                 borderWidth: 1,
                 scaleFontColor: "#FFFFFF",
                 lineWidth: 25
+                
             }
             ]
         },
+
+        options: {
+            plugins: {  // 'legend' now within object 'plugins {}'
+              legend: {
+                labels: {
+                  color: "black",  // not 'fontColor:' anymore
+                  // fontSize: 18  // not 'fontSize:' anymore
+                  font: {
+                    size: 18 // 'size' now within object 'font {}'
+                  }
+                }
+              }
+            }},
     });
 }
