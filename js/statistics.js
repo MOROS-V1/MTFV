@@ -20,7 +20,7 @@ let g2_vaccineVals = [0,0,0,0];
 
 let g3_vaccineVals = [0,0,0,0];
 
-const _symptoms = ['temperatureRise','musclePain','sensitivityOrShortnessOfBreath','fatigue','headache','shudder','jointPain'];
+const _symptoms = ['temperatureRise','musclePain','Dyspnea','fatigue','headache','shudder','jointPain'];
 let g1_symptomsVals = [0,0,0,0,0,0,0];
 
 let g2_symptomsVals = [0,0,0,0,0,0,0];

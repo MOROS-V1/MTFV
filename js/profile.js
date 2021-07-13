@@ -12,26 +12,26 @@ let section = document.getElementById('profile');
 console.log(statisticsArray);
 for (let i = 0; i < statisticsArray.length; i++) {
     let div = document.createElement('div');
-    section.appendChild(div);
+    section.insertBefore(div, section.firstChild);
     let m = document.createElement('img');
     div.appendChild(m);
     let userName = document.createElement('h3');
     div.appendChild(userName);
     let date = document.createElement('p');
     div.appendChild(date);
-
+    //eElement.insertBefore(newFirstElement, eElement.firstChild);
     
     if (statisticsArray[i].gender == 'male') {
         profileArray.push(statisticsArray[i]);
         m.setAttribute('src', '../icon/male.png');
-        userName.textContent = 'statisticsArray[i].fullname';
-        date.textContent = new Date();
+        userName.textContent = statisticsArray[i].fullname;
+        date.textContent = statisticsArray[i].date;
 
     } else if (statisticsArray[i].gender == 'female') {
         profileArray.push(statisticsArray[i]);
         m.setAttribute('src', '../icon/female.png');
-        userName.textContent = 'statisticsArray[i].fullname';
-        date.textContent = new Date();
+        userName.textContent = statisticsArray[i].fullname;
+        date.textContent = statisticsArray[i].date;
     }
 }
 
