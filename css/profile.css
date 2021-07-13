@@ -1,17 +1,16 @@
-
-#profile div{
-    width: 53%;
-    border-radius: 15px;
-    margin: 45px 146px;
-    background-color: #BFBFBF;
-    box-shadow: 1px 1px 12px;
+#profile div {
+    width: 48%;
+    border-radius: 5px;
+    margin: 20px 146px;
+    background-color: #37c8ec8a;
+    box-shadow: 1px 1px 4px;
 }
 
 #profile div img {
     margin: 7px;
-    width: 13%;
+    width: 11%;
     position: relative;
-    left: 60px;
+    left: 41px;
     top: 26px;
     border-radius: 50%;
     background-color: #ECECEC;
@@ -19,19 +18,21 @@
 
 #profile div h3 {
     position: relative;
-    left: 195px;
-    top: -40px;
-    font-size: 33px;
+    left: 23%;
+    bottom: 38px;
+    font-size: 25px;
     font-weight: bold;
+    width: 40%;
 }
+
 #profile div p {
     margin: 0px;
-   
-    width: 386px;
+    width: 17%;
     position: relative;
-    left: 539px;
-    top: -12px;
+    left: 83%;
+    bottom: 14px;
 }
+
 main img {
     width: 100%;
 }
@@ -43,7 +44,7 @@ main img {
     z-index: -1;
     top: 19px;
     left: 10px;
-    background: #930719;
+    background: #2267A5;
     float: left;
     /* width: 130px;
   position: fixed;
@@ -58,10 +59,25 @@ main img {
     height: 50%;
     position: absolute;
     left: 8px;*/
-} 
+}
 
 main h1 {
     text-align: center;
     font-size: 55px;
     font-weight: bold;
+    margin: 8%;
+}
+
+h4 {
+    width: 14%;
+    position: relative;
+    left: 23%;
+    bottom: 28px;
+    font-size: 19px;
+}
+body {
+    background-image: url('../icon/profileCover.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }

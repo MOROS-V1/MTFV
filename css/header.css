@@ -42,12 +42,21 @@ header a:hover{
     border-bottom: solid #f1f1f1 8px ;
 }
 nav{
+    width: 42%;
     position: absolute;
     right: 25px;
     top: 39px;}
-#logo{
+header #logo{
     position: relative;
-    left: 67px;
-    width: 7%;
+    left: 142px;
+    width: 94px;
     top: 3px;
+}
+
+header h1 {
+    position: relative;
+    left: 220px;
+    bottom: 21px;
+    font-weight: bold;
+    font-size: 18px;
 }
