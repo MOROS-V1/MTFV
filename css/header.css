@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
-
-body{
+body {
     font-family: 'Oswald', sans-serif;
     color: #1D1D1D;
     box-sizing: border-box;
 }
-body,html{
+
+body, html {
     min-height: 100vh;
     position: relative;
 }
 
-
-
-header{
+header {
     background-color: #37C8EC;
     height: 100px;
     /* border-bottom: solid #2267A5 10px; */
@@ -21,32 +19,36 @@ header{
     width: 100%;
     box-shadow: -6px -21px 67px;
     z-index: 2;
-   
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     margin-left: 36px;
-    font-size: 21px;  
-    
+    font-size: 21px;
 }
-header a{
+
+header a {
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
     color: #1D1D1D;
     font-size: 20px;
     font-weight: bolder;
-    padding-bottom: 15px ;
+    padding-bottom: 15px;
 }
-header a:hover{
+
+header a:hover {
     color: #2267A5;
-    border-bottom: solid #f1f1f1 8px ;
+    border-bottom: solid #f1f1f1 8px;
 }
-nav{
+
+nav {
     width: 42%;
     position: absolute;
     right: 25px;
-    top: 39px;}
-header #logo{
+    top: 39px;
+}
+
+header #logo {
     position: relative;
     left: 142px;
     width: 94px;
