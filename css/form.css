@@ -1,7 +1,7 @@
 fieldset{
     margin: 28px 18px;
     padding: 1em 2em;
-    border: solid 1px #ccc;
+    border: solid 1px rgba(55, 200, 236);
     border-radius: 6px;
     width: 85%;
     height: 95%;
@@ -9,7 +9,7 @@ fieldset{
 legend {
     font-size: 1.25em;
     padding: 0 .25em;
-    color: #999;
+    color: rgb(34, 104, 165);
 }
 label{
     display: inline-block;
@@ -21,7 +21,7 @@ form{
     /* float:left; */
     font-size: 20px;
     display: block;
-    background: white;
+    background: rgb(179, 223, 235);
     box-shadow: 14px 14px 20px #cbced1;
     width: 120%;
     height: 95%;
@@ -80,19 +80,20 @@ form h3{
  }
  #submitbuttom{
     float: right;
-    margin-right:140px ;
-    background-color: #F14C42;
+    margin-right:0px ;
+    margin-top: 4px;
+    background-color: rgb(34, 103, 165);
     border-style: none;
     width: 200px;
     height: 40px;
     font-weight: bolder;
     font-size: 20px;
     border-radius: 4px;
-    box-shadow: 0 5px 0 #B50717;
+    box-shadow: 0 5px 0 rgb(34, 103, 165);
     color: #1D1D1D;
     cursor: pointer;
     transition: all .1s linear;
-    box-shadow: 0 2px 0 #B50717;
+    box-shadow: 0 2px 0 rgb(34, 103, 165);
     transform: translateY(3px);
 }
 

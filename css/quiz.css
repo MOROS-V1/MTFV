@@ -16,6 +16,7 @@ h1 {
 div{
     display: block;
     border-top: solid 4px rgb(34, 103, 165);;
+    height: 20%;
 }
 h3 {
     text-align: left;
@@ -97,7 +98,7 @@ input{
   } */
 
 section {
-    border-top: solid #cf291d5e 70px;
+    border-top: solid rgb(34, 103, 165) 70px;
     margin: 75px 150px;
     padding-top: 57px;
 }
