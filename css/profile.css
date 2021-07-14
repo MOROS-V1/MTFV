@@ -7,6 +7,9 @@
     box-shadow: 1px 1px 4px;
     
 }
+body{
+    overflow-x: hidden;
+}
 
 #profile div img {
     margin: 7px;
@@ -34,15 +37,16 @@
     left: 83%;
     bottom: 34px;
 }
+}
 
-#profile div {
+/* #profile div {
     animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     transition: 1s;
-}
+} */
 
 #profile div:hover{
     transition: all .5s ease-in-out;
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 @keyframes scale-up-hor-left {
     0% {
@@ -99,4 +103,8 @@ body {
 }
 #hero{
     width: 100%;
+}
+
+#whiteSpace{
+    margin: 6%;
 }

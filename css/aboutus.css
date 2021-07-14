@@ -132,14 +132,14 @@ main ul li,#leaderContainer{
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: rgba(191, 191, 191, 0.699);
+    background-color: #2da2ddc4;
     border: solid #1D1D1D 2px;
     color: black;
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color: #2990C3;;
+    background-color: #2990C3;
     color: white;
     border: solid #BFBFBF 2px;
     transform: rotateY(180deg);
