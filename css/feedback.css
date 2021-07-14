@@ -68,6 +68,7 @@ h3 {
     font-weight: bolder;
     margin-top: 8px;
     font-size: large;
+    padding-left: 2%;
 }
 
 h1 {
@@ -141,7 +142,7 @@ h5 {
     float: right;
     /* margin-left: 58px; */
     font-weight: bold;
-    top: -20px;
+    top: -14px;
     font-size: small;
 }
 
@@ -159,7 +160,6 @@ legend {
     position: relative;
     top: -60px;
     left: -60px;
-    border-bottom: black solid;
     width: 100%;
     padding-bottom: 3%;
     padding-top: 14px;
@@ -234,9 +234,9 @@ span {
     left: 54.2%;
     background-color: #37C8EC;
     height: 64px;
-    width: 33%;
-    padding-left: 21px;
-    padding-top: 26px;
+    width: 33.3%;
+    padding-left: 20px;
+    padding-top: 15px;
     /* border: solid black; */
     border-radius: -11px;
     border-bottom: white;
@@ -286,3 +286,16 @@ h4 {
 #three {
     margin-bottom: -5px;
 }
+
+
+.emoji {
+   
+ 
+    transition: transform .2s;
+  
+  }
+  .emoji:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+  }
