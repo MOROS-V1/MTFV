@@ -10,12 +10,13 @@ main{
     width: 100%;
     background-color: #bfbfbf3d;
     position: relative;
-    border-top: solid #bfbfbfb9 10px;
+    border-top: solid #37C8EC 10px;
+    border-bottom: solid #37C8EC 4px;
 }
 #locationsContainer h2{
     clear: both;
     margin: 25px;
-    background-color: #bfbfbf3d;
+    background-color: #28afdc15;
     padding: 25px;
     display: block;
     font-size: 40px;
@@ -24,7 +25,7 @@ main{
 }
 #locationsContainer iframe{
     border-radius: 25px;
-    border: solid #bfbfbf3d 5px ;
+    border: solid #28B0DC 2px ;
 }
 .gmap_canvas{
     border-radius: 25px;
@@ -40,19 +41,19 @@ main{
 #submitButton {
     margin-left: 50px;
     top: 46px;
-    background-color: #F14C42;
+    background-color: #28B0DC;
     border-style: none;
     width: 345px;
     height: 80px;
     font-weight: bolder;
     font-size: 30px;
     border-radius: 4px;
-    box-shadow: 0 5px 0 #B50717;
+    box-shadow: 0 5px 0 #2da2dd;
     color: #1D1D1D;
     cursor: pointer;
     transition: all .1s linear;
 }
 #submitButton:active{
-    box-shadow: 0 2px 0 #B50717;
+    box-shadow: 0 2px 0 #28B0DC;
   transform: translateY(3px);
 }
