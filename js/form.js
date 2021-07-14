@@ -115,7 +115,7 @@ function initilizeForm() {
             ['shudder', false],
             ['jointPain', true]
         ], '2021/4/25. 08:11');
-        new Visitor('Dorgham Basel', 'female', '40-59', 'sinopharm', [
+        new Visitor('Dorgham Basel', 'male', '40-59', 'sinopharm', [
             ['temperatureRise', true],
             ['musclePain', false],
             ['Dyspnea', false],

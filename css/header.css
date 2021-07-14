@@ -13,9 +13,14 @@ body,html{
 
 
 header{
-   background-color: #ECECEC;
-    height: 156px;
-    border-bottom: solid #BFBFBF 10px;
+    background-color: #37C8EC;
+    height: 100px;
+    /* border-bottom: solid #2267A5 10px; */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: -6px -21px 67px;
+    z-index: 2;
    
 }
 nav ul li{
@@ -28,23 +33,30 @@ header a{
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
     color: #1D1D1D;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bolder;
     padding-bottom: 15px ;
 }
 header a:hover{
-    color: #B50717;
-    border-bottom: solid #B50717 8px ;
+    color: #2267A5;
+    border-bottom: solid #f1f1f1 8px ;
 }
 nav{
+    width: 42%;
     position: absolute;
-    right: 92px;
-    top: 69px;
-}
-#logo{
+    right: 25px;
+    top: 39px;}
+header #logo{
     position: relative;
-    left: 67px;
-    top: -26px;
-    height: 225px;
-    width: 225px;
+    left: 142px;
+    width: 94px;
+    top: 3px;
+}
+
+header h1 {
+    position: relative;
+    left: 220px;
+    bottom: 21px;
+    font-weight: bold;
+    font-size: 18px;
 }
