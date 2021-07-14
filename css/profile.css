@@ -1,9 +1,11 @@
 #profile div {
     width: 48%;
+    height: 120px;
     border-radius: 5px;
-    margin: 20px 146px;
+    margin: 9px 146px;
     background-color: #37c8ec8a;
     box-shadow: 1px 1px 4px;
+    
 }
 
 #profile div img {
@@ -30,8 +32,34 @@
     width: 17%;
     position: relative;
     left: 83%;
-    bottom: 14px;
+    bottom: 34px;
 }
+
+#profile div {
+    animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    transition: 1s;
+}
+
+#profile div:hover{
+    transition: all .5s ease-in-out;
+  transform: scale(1.04);
+}
+@keyframes scale-up-hor-left {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+  }
+  
+
 
 main img {
     width: 100%;
@@ -46,19 +74,6 @@ main img {
     left: 10px;
     background: #2267A5;
     float: left;
-    /* width: 130px;
-  position: fixed;
-  z-index: 1;
-  top: 20px;
-  left: 10px;
-  background: #930719;
-  overflow-x: hidden;
-  padding: 8px 0; */
-    /* width: 120px;
-    background-color: ;
-    height: 50%;
-    position: absolute;
-    left: 8px;*/
 }
 
 main h1 {
@@ -75,9 +90,13 @@ h4 {
     bottom: 28px;
     font-size: 19px;
 }
+
 body {
     background-image: url('../icon/profileCover.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: right bottom;
+}
+#hero{
+    width: 100%;
 }
