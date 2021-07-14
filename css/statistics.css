@@ -10,7 +10,7 @@ content: "";
   margin:5%;
   margin-left: 20%;
   margin-right: 20%;
-  background-color: #ECECEC;
+  background-color: #f1f1f179;
 
   
 }
@@ -37,9 +37,6 @@ main{
 
   
 }
-body{
-  background-color: rgba(95, 158, 160, 0.103);
-}
 
 
 
@@ -54,5 +51,17 @@ h2 {
   margin-left: 30px;
   font-size: 20px;
   font-weight: bold;
-  background-color: #e22d20ab;
+  
+
+}
+
+p{
+  width: 92%;
+  text-align: justify;
+  position: relative;
+  top: 10%;
+  font-size: 14px;
+  font-family: system-ui;
+
+
 }

@@ -1,6 +1,4 @@
-body{
- background-color: rgba(128, 128, 128, 0.082);
-}
+
 
 .c {list-style-type: circle;
     font-size: 16px;
@@ -50,7 +48,7 @@ text-align: center;
    h4{
        font-size: 28px;
        padding: 3px;
-       color: #B50717;
+       color: #008eb7;
        
    }
 
@@ -70,7 +68,7 @@ margin-bottom: 100px;
 .headerbenifites{
 
     font-size: 35px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 40px;
 
 
