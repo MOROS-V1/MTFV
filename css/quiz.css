@@ -13,10 +13,11 @@ h1 {
     margin: 100px;
     font-size: 80px;
 }
-div{
+main div{
     display: block;
-    border-top: solid 4px rgb(34, 103, 165);;
+    border-top: solid 4px rgb(34, 103, 165);
     height: 20%;
+    text-align: left;
 }
 h3 {
     text-align: left;
@@ -31,6 +32,7 @@ h3 {
     background-color: #80808021;
     padding: 27px;
     color: rgba(34, 104, 165, 0.781);
+    text-align: center;
 }
 
 label {
@@ -118,3 +120,4 @@ main img {
     color: rgb(55, 200, 236);
     text-shadow: 0 0 50px rgb(55, 200, 236);
 }
+
