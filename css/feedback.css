@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
-
-
 * {
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
@@ -13,12 +11,11 @@ body {
     background-color: white;
     /*width: 90%;*/
     margin: 0 auto;
-   
 }
- 
 
- /* Button */
- /*button {
+/* Button */
+
+/*button {
     -moz-box-shadow: inset -3px -3px 10px #BFBFBF;
     -webkit-box-shadow: inset -3px -3px 10px #BFBFBF;
     box-shadow: inset -3px -3px 10px #BFBFBF;
@@ -31,8 +28,7 @@ body {
     
  }*/
 
-
- button  {
+button {
     display: block;
     position: relative;
     left: 69%;
@@ -49,15 +45,13 @@ body {
     cursor: pointer;
     transition: all .1s linear;
 }
+
 #button:active {
     box-shadow: 0 2px 0 #213079;
     transform: translateY(3px);
 }
- 
 
-
- fieldset {
-
+fieldset {
     /* -moz-box-shadow: inset -3px -3px 10px  #BFBFBF;
     -webkit-box-shadow: inset -3px -3px 10px  #BFBFBF;
     box-shadow: inset -3px -3px 10px  #BFBFBF; */
@@ -65,18 +59,18 @@ body {
     font-size: large;
     font-weight: bold;
     height: 431px;
-    border: solid black;
+    /* border: solid black; */
+    background-color: #80808012;
+}
 
-
- }
- 
- h3 {
+h3 {
     color: #213079;
     font-weight: bolder;
     margin-top: 8px;
     font-size: large;
 }
-h1{
+
+h1 {
     color: black;
     font-weight: bolder;
     font-size: larger;
@@ -84,43 +78,46 @@ h1{
     margin-bottom: 2px;
     margin-left: 50px;
 }
-legend{
+
+legend {
     margin: 60px;
     background-color: #37C8EC;
-
 }
 
-    input, label {
-        display:block;
-        margin: 15px;
-    }
+input, label {
+    display: block;
+    margin: 15px;
+}
 
-    #Feedbackform {
-        font-size: large;
-        width: 34%;
-        float: left;
-        height: 80%;
-        margin: 10px;
-        margin-left: 102px;
-    }
-    #results {
-        overflow-y: scroll;
-        margin-right: 19px;
-        width: 35%;
-        padding-left: 20px;
-        float: right;
-        height: 370px;
-        margin: 10px;
-        text-align: left;
-        font-size: large;
-        border-radius: 3px;
-        padding-top: 20px;
-        position: relative;
-        top: 62px;
-        border: solid;
-        left: -124px;
-    }
-footer{
+#Feedbackform {
+    font-size: large;
+    width: 34%;
+    float: left;
+    height: 80%;
+    margin: 10px;
+    margin-left: 102px;
+}
+
+#results {
+    overflow-y: scroll;
+    margin-right: 19px;
+    width: 35.1%;
+    padding-left: 20px;
+    float: right;
+    height: 370px;
+    margin: 10px;
+    text-align: left;
+    font-size: large;
+    border-radius: 3px;
+    padding-top: 20px;
+    position: relative;
+    top: 62px;
+    /* border: solid; */
+    left: -9.7%;
+    background-color: #80808012;
+}
+
+footer {
     clear: both;
     position: absolute;
     bottom: 0;
@@ -131,7 +128,6 @@ footer{
     padding: 40px;
     height: 800px;
     margin-top: 72px;
-    
 }
 
 .list {
@@ -149,12 +145,10 @@ h5 {
     font-size: small;
 }
 
-
 main p {
     font-weight: bold;
     font-size: small;
     margin: 10px;
-  
 }
 
 legend {
@@ -172,36 +166,40 @@ legend {
     padding-left: 20px;
 }
 
-   
-   button:hover {background-color: #28B0DC}
-   button:active {
-    
+button:hover {
+    background-color: #28B0DC
+}
+
+button:active {
     box-shadow: 0 10px black;
     transform: translateY(4px);
-  }
+}
 
-  input {
+input {
     border-radius: 4px;
-  }
- 
-  #feedbacktext {
+}
+
+#feedbacktext {
     width: 431px;
     height: 61px;
     position: relative;
     left: 10px;
     top: -80px;
 }
+
 label {
     position: relative;
     left: 11px;
     top: -88px;
 }
+
 input {
     border-radius: 4px;
     position: relative;
     left: -7px;
     top: -9px;
 }
+
 #name {
     position: relative;
     left: 10px;
@@ -210,21 +208,12 @@ input {
     height: 11%;
 }
 
-
-
-
-
-
 main img {
     margin-right: 10px;
     width: 35px;
     height: 35px;
-    cursor: pointer  
+    cursor: pointer
 }
-
-
-
- 
 
 .faces {
     position: relative;
@@ -240,34 +229,31 @@ span {
     left: 361px;
 }
 
-
 .header {
-    position: relative;
-    /* width: 137px; */
-    /* left: 248px; */
     position: absolute;
-    left: 841px;
+    left: 54.2%;
     background-color: #37C8EC;
     height: 64px;
-    width: 504px;
+    width: 33%;
     padding-left: 21px;
     padding-top: 26px;
-    border: solid black;
+    /* border: solid black; */
     border-radius: -11px;
     border-bottom: white;
-    top: 278px;
+    top: 22.8%;
     float: left;
     font-size: xx-large;
     font-weight: bold;
     color: black;
 }
+}
 
-
-#resultheader{
+#resultheader {
     padding-bottom: 8px;
     margin: -12px;
     margin-left: -2px;
 }
+
 .last {
     position: absolute;
     height: 10%;
@@ -287,13 +273,16 @@ h4 {
     font-weight: bolder;
     font-size: x-large;
 }
+
 #one {
-     position: relative;
-      top: -253px;
+    position: relative;
+    top: -253px;
 }
-#tow{
+
+#tow {
     margin-bottom: 16px;
 }
-#three{
+
+#three {
     margin-bottom: -5px;
 }
