@@ -1,8 +1,13 @@
+body{
+  overflow-x: hidden;
+}
+
 #heroContainer{
   position: relative;
     text-align: center;
     width: 100%;
     height: 575px;
+    min-height: 575px;
     /* position: absolute; */
     z-index: 0;
     background-image: url('../icon/indexHero.png');
@@ -42,7 +47,7 @@
     border-radius: 25px;
 }
 
-#m_firstP{
+/* #m_firstP{
   float: left;
   min-height: 452px;
   margin: auto 5%;
@@ -50,7 +55,7 @@
   margin-bottom: 1%;
   text-align: justify;
   font-size: 25px;
-  /* overflow: scroll; */
+ overflow: scroll;
   font-weight: 500;
   width: 28%;
   padding: 1%;
@@ -58,11 +63,32 @@
   border-radius: 5px;
   border-top: 15px solid #37C8EC;
   transition: all .2s ease-in-out;
+} */
+#m_firstP_container{
+  float: left;
+  min-height: 452px;
+  width: 28%;
+  margin: auto 5%;
+  margin-top: 9%;
+  margin-bottom: 1%;
+  background-color: #28B0DC;
+  border-top: 15px solid #37C8EC;
 }
-
+#m_firstP_container h1{
+  font-weight: bolder;
+  font-size: 30px;
+  margin: 10px;
+}
+#m_firstP_container p{
+  font-weight: 500;
+  text-align: justify;
+  font-size: 25px;
+  width: 90%;
+  margin: 4%;
+}
 #cardsSection ul li{
   margin: 26px 20px;
-  width: 261px;
+  width: 28%;
   height: 380px;
   display: inline-block;
 }
@@ -122,7 +148,7 @@ hr{
   border-top: 10px solid #37C8EC;
 }
 #m_s_image{
-  background-image: url('https://via.placeholder.com/1024x512');
+  background-image: url('../icon/vaccination.jpg');
   overflow: hidden;
   height: 512px;
   width: 60%;
@@ -198,16 +224,18 @@ hr{
   width: 20%;
   padding: 26px;
   padding-bottom: 48px;
-  background-color: gray;
+  background-color: #2990c36e;
+  /* min-height: 443px; */
 }
 #d_s_1:hover,#d_s_2:hover,#d_s_3:hover{
   transition: all .2s ease-in-out;
   border-top: 10px solid #37C8EC;
 }
 .d_s_3_h1{
-  font-size: 25px;
+  font-size: 21px;
   margin: 10px;
   font-weight: bolder;
+  text-align: left;
 }
 #d_s_1 img,#d_s_2 img,#d_s_3 img{
   width: 100%;
@@ -249,7 +277,7 @@ hr{
   min-height: 100vh;
 }
 .news{
-  background-color: white;
+  background-color: #2990c36e;
   border-radius: 2px;
   border: solid 3px #2990C3;
   /* padding: 5px; */
@@ -262,23 +290,52 @@ hr{
   float: left;
   height: 100%;
   width: 20%;
+  border: solid 1px blue;
 }
 .news h1{
   font-size: 15px;
-  color: gray;
+  color: rgb(48, 48, 48);
   margin: 10px;
   font-weight: bolder;
   display: inline-block;
 }
+#latestNews{
+  font-size: 25px;
+  margin: 2%;
+  font-weight: bolder;
+}
 .news p{
   font-size: 20px;
+  margin: 5px;
+  margin-left: 120px;
 }
 .news:hover{
   background-color:#2990C3 ;
   transition: all .5s ease-in-out;
   transform: scale(1.04);
 }
-
+/* ---------------------------------FAQ */
+.FAQ{
+  padding: 10px;
+}
+.FAQ:hover{
+  transition: all .5s ease-in-out;
+  transform: scale(1.04);
+}
+.FAQ h2{
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 5px;
+}
+.FAQ p{
+  background-color: #2990c36e;
+  padding: 10px;
+  text-align: justify;
+}
+/* white space */
+#whiteSpace{
+  margin: 5%;
+}
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
