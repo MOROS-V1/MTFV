@@ -8,7 +8,7 @@ main{
     width: 100%;
     height: 575px;
     z-index: 0;
-    background-image: url('../icon/heroAboutUs.png');
+    background-image: url('../icon/aboutUsHero.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -42,14 +42,14 @@ main ul li,#leaderContainer{
     /* left: 36%; */
     /* top: 46px; */
     text-align: center;
-    background-color: #F14C42;
+    background-color: #28B0DC;
     border-style: none;
     width: 345px;
     height: 80px;
     font-weight: bolder;
     font-size: 30px;
     border-radius: 4px;
-    box-shadow: 0 5px 0 #B50717;
+    box-shadow: 0 5px 0 #2da2dd;
     color: #1D1D1D;
     cursor: pointer;
     transition: all .1s linear;
@@ -139,7 +139,7 @@ main ul li,#leaderContainer{
   
   /* Style the back side */
   .flip-card-back {
-    background-color: #FF6A61;
+    background-color: #2990C3;;
     color: white;
     border: solid #BFBFBF 2px;
     transform: rotateY(180deg);

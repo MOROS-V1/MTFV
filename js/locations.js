@@ -10,6 +10,7 @@ function VaccineLocation(locationName, link) {
     locationsArr.push(this);
 }
 
+let jordanMap = new VaccineLocation('Jordan','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916941.6954968707!2d35.12383742921876!3d31.218118545350734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15006f476664de99%3A0x8d285b0751264e99!2sJordan!5e0!3m2!1sen!2sjo!4v1626198036413!5m2!1sen!2sjo');
 
 function makeLocations() {
 
@@ -85,9 +86,35 @@ function renderDesiredLocation(event) {
     }
 }
 
+function renderIndivisualLocation(location){
+
+    const container = document.getElementById("locationsContainer");
+    container.textContent = '';
+
+    const div = document.createElement('div');
+    div.className = 'gmap_canvas';
+    container.appendChild(div);
+
+    const h2 = document.createElement('h2');
+    div.appendChild(h2);
+    h2.textContent = location.locationName;
+
+    const iframe = document.createElement('iframe');
+    div.appendChild(iframe);
+    iframe.width = '600';
+    iframe.height = '500';
+    iframe.id = 'gmap_canvas_jordan';
+    iframe.src = location.link;
+    iframe.frameborder = "0";
+    iframe.marginheight = "0"
+    iframe.marginwidth = "0";
+}
+
 
 function initilize() {
     makeLocations();
+
+    renderIndivisualLocation(jordanMap);
 
     const vaccineLocationsForm = document.getElementById('locationForm');
     vaccineLocationsForm.addEventListener('submit', renderDesiredLocation);
