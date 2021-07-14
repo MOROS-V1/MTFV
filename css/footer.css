@@ -1,0 +1,25 @@
+footer{
+    background-color: #1D1D1D;
+    height: 186px;
+    clear: both;
+}
+
+footer ul {
+    position: relative;
+    top: 25px;
+    text-align: center;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 16px;
+}
+footer p{
+    text-align: center;
+    position: relative;
+    top: 67px;
+    font-size: 21px;  
+    /* font-weight: bold; */
+    font-family: 'Oswald', sans-serif;
+    color: #2267A5;
+}
+

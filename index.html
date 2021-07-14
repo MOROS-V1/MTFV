@@ -1,23 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid 19 Tracker</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
+
 <body>
+    <section id='heroSection'>
+        <section id='heroContainer'></section>
+    </section>
     <header>
+        <div>
+            <img src="icon/logo-small.png" alt="logo" id="logo">
+            <h1>MOROS COVID-19 VACCINE TRACKER </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a style="color: #2267A5; font-weight: 1000;" href="#">Home</a></li>
+                <li><a href="pages/generalinfo.html">General Info</a></li>
+                <li><a href="pages/location.html">Vaccine Centers</a></li>
+                <li><a href="pages/profile.html">Profiles</a></li>
+                <li><a href="pages/about-us.html">About Us</a></li>
+            </ul>
+        </nav>
 
     </header>
-    <body>
-        
-    </body>
     <main>
 
+        <!-- <img src="https://via.placeholder.com/1024x512" alt="hero"> -->
+        </section>
+        <section id='cardsSection'>
+            <h1 class="pAnim">Input your data, view statistics or take a quiz!</h1>
+            <div>
+                <ul>
+                    <li>
+                        <a href="pages/form.html">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front" id='formButton'>
+
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>Submit Data</h1>
+                                        <p>Share the information about what type of vaccine you have taken, and if you
+                                            had any side effects.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/statistics.html">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front" id='statisticsButton'>
+
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>View Statistics</h1>
+                                        <p>View Statistics of people who took vaccines, which vaccine type and if they
+                                            had any side effects.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/quiz.html">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front" id="quizButton">
+
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>Covid Quiz</h1>
+                                        <p>Test your knowledge about Covid-19 in a Quiz.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div id='m_firstP_container' class="pAnim">
+            <h1>What is vaccination ?</h1>
+            <p id="m_firstP">
+                Vaccination is a simple, safe, and effective way of protecting people against harmful diseases, before they
+                come into contact with them. It uses your body’s natural defenses to build resistance to specific infections
+                and makes your immune system stronger.
+    
+                Vaccines train your immune system to create antibodies, just as it does when it’s exposed to a disease.
+                However, because vaccines contain only killed or weakened forms of germs like viruses or bacteria, they do
+                not cause the disease or put you at risk of its complications.
+    
+                Most vaccines are given by an injection, but some are given orally (by mouth) or sprayed into the nose.
+            </p>
+        </div>
+        <hr>
+        <section id='m_secondSection'>
+            <div id='m_s_image'>
+
+            </div>
+            <div id='m_p_container' class="pAnim">
+                <h1>Why is vaccination important?</h1>
+                <p>
+                    Vaccination is a safe and effective way to prevent disease and save lives – now more than ever.
+                    Today there are vaccines available to protect against at least 20 diseases, such as diphtheria,
+                    tetanus, pertussis, influenza and measles. Together, these vaccines save the lives of up to 3
+                    million people every year.
+
+                    When we get vaccinated, we aren’t just protecting ourselves, but also those around us. Some people,
+                    like those who are seriously ill, are advised not to get certain vaccines – so they depend on the
+                    rest of us to get vaccinated and help reduce the spread of disease.
+
+                    During the COVID-19 pandemic, vaccination continues to be critically important. The pandemic has
+                    caused a decline in the number of children receiving routine immunizations, which could lead to an
+                    increase in illness and death from preventable diseases. WHO has urged countries to ensure that
+                    essential immunization and health services continue, despite the challenges posed by COVID-19.More
+                    information about the importance of vaccines is available here.
+                </p>
+            </div>
+        </section>
+        <hr>
+        <section id='m_thirdSection'>
+            <div id='marker'>
+
+            </div>
+            <div id='m_thirdSectionText' class="pAnim">
+                <h1>
+                    Takecare!
+                </h1>
+                <p>
+                    The human coronavirus is commonly spread through respiratory droplets in the air from a sick person, close personal contact, or by touching a surface with the virus on it. You can take steps to protect yourself and prevent the spread of the virus by washing your hands often, not touching your face, cleaning frequently touched surfaces, avoiding close contact with sick people, and practicing good respiratory hygiene.
+                </p>
+            </div>
+            <div id='m_thirdSectionCards'>
+                <ul>
+                    <li id='d_s_1' class="pAnim">
+                        <div>
+                            <img src="icon/washingHands.jpg" alt="washing hands">
+                            <h1 class="d_s_3_h1">
+                                Clean your hands
+                            </h1>
+                            <p>
+                                Wash your hands regularly with soap and water for at least 20 seconds,* says HealthLink BC. If soap and water aren’t readily available, use a hand sanitizer that contains at least 60% alcohol. Cleaning your hands often helps to lower your risk of infection and reduce the spread of infection to others.
+                            </p>
+                        </div>
+                    </li>
+                    <li id='d_s_2' class="pAnim">
+                        <div>
+                            <img src="icon/nofacetouch.png" alt="no face touching">
+                            <h1 class="d_s_3_h1">
+                                Avoid touching your face
+                            </h1>
+                            <p>
+                                Take special care not to touch your eyes, nose, and mouth with unwashed hands, since these are the most likely ways for the virus to enter your body.
+                            </p>
+                        </div>
+                    </li>
+                    <li id='d_s_3' class="pAnim">
+                        <div>
+                            <img src="icon/stayhome.jpg" alt="stay in">
+                            <h1 class="d_s_3_h1">
+                                Stay in, if you feel sick
+                            </h1>
+                            <p>
+                                Avoid close contact with others if you feel unwell. If you have a cough or fever, seek medical attention.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section id='m_fourthSection'>
+            <div id="m_four_text">
+                <h1>
+                    Frequently Asked Questions:
+                </h1>
+                <div id='FAQcontainer'>
+                    <!-- <div class="FAQ">
+                        <h2>
+                            - Who can get vaccinated ?
+                        </h2>
+                        <p>
+                            Nearly everyone can get vaccinated. However, because of some medical conditions, some people should not get certain vaccines, or should wait before getting them.
+                        </p>
+                    </div> -->
+                </div>
+            </div>
+            <div id='m_four_news'>
+                <h1 id ='latestNews'>
+                    Latest News:
+                </h1>
+                <!-- <div class="news">
+                    <img src="https://via.placeholder.com/256x256" alt="">
+                    <div>
+                        <h1>
+                            lorem
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div> -->
+
+            </div>
+
+        </section>
+        <hr>
+        <div id="whiteSpace">
+
+        </div>
     </main>
+    <footer>
+        <ul>
+            <li><img src="icon/UN.png" alt="footer_logo1"></li>
+            <li><img src="icon/helthML.png" alt="footer_logo2"></li>
+            <li><img src="icon/WHO.png" alt="footer_logo3"></li>
+        </ul>
+        <p> &copy; MOROS-V1 Corporation, All Rights Reserved.</p>
+    </footer>
+    <script src="js/app.js"></script>
 </body>
+
 </html>

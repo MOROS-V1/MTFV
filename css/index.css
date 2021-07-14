@@ -1,0 +1,390 @@
+body{
+  overflow-x: hidden;
+}
+
+#heroContainer{
+  position: relative;
+    text-align: center;
+    width: 100%;
+    height: 575px;
+    min-height: 575px;
+    /* position: absolute; */
+    z-index: 0;
+    background-image: url('../icon/indexHero.png');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#heroSection{
+  width: 100%;
+  height: 84vh;
+}
+#cardsSection{
+    z-index: 1;
+    /* text-align: center; */
+    /* background-color: white; */
+    /* background-color: #bfbfbf48; */
+    /* border-top: solid #BFBFBF 10px; */
+    /* border-bottom: solid #BFBFBF 10px; */
+    padding-top: 7%;
+    position: relative;
+    width: 60%;
+    display: inline-block;
+    /* margin: auto 5px; */
+    /* position: sticky; */
+}
+#cardsSection h1{
+  /* position: relative; */
+  text-align: center;
+    margin: auto;
+    padding: 25px;
+    margin-left: 18%;
+    margin-right: 18%;
+    /* width: 40%; */
+    font-size: 35px;
+    font-weight: 1px;
+    background-color: #28afdc15;
+    border-radius: 25px;
+}
+
+/* #m_firstP{
+  float: left;
+  min-height: 452px;
+  margin: auto 5%;
+  margin-top: 7%;
+  margin-bottom: 1%;
+  text-align: justify;
+  font-size: 25px;
+ overflow: scroll;
+  font-weight: 500;
+  width: 28%;
+  padding: 1%;
+  background-color: #28B0DC;
+  border-radius: 5px;
+  border-top: 15px solid #37C8EC;
+  transition: all .2s ease-in-out;
+} */
+#m_firstP_container{
+  float: left;
+  min-height: 452px;
+  width: 28%;
+  margin: auto 5%;
+  margin-top: 9%;
+  margin-bottom: 1%;
+  background-color: #28B0DC;
+  border-top: 15px solid #37C8EC;
+}
+#m_firstP_container h1{
+  font-weight: bolder;
+  font-size: 30px;
+  margin: 10px;
+}
+#m_firstP_container p{
+  font-weight: 500;
+  text-align: justify;
+  font-size: 25px;
+  width: 90%;
+  margin: 4%;
+}
+#cardsSection ul li{
+  margin: 26px 20px;
+  width: 28%;
+  height: 380px;
+  display: inline-block;
+}
+
+.cardImage{
+    width: 100%;
+    height: 100%;
+}
+
+
+#formButton{
+  background-image: url('../icon/card1.png');
+  width: 100%;
+  height: 100%;
+  border: solid #28afdc77 2px;
+  /* filter: blur(3px);
+  filter: grayscale(1);
+  filter: saturate(1.3); */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+}
+#statisticsButton{
+
+  background-image: url('../icon/card2.png');
+  width: 100%;
+  height: 100%;
+  border: solid #28afdc77 2px;
+  /* filter: blur(3px);
+  filter: grayscale(1);
+  filter: saturate(1.3); */
+  background-position: center;
+  /* background-repeat: no-repeat;
+  background-size: contain; */
+}
+#quizButton{
+  background-image: url('../icon/card3.png');
+  width: 100%;
+  height: 100%;
+  border: solid #28afdc77 2px;
+  /* filter: blur(3px);
+  filter: grayscale(1);
+  filter: saturate(1.3); */
+  background-position: center;
+  /* background-repeat: no-repeat;
+  background-size: contain; */
+}
+hr{
+  clear: both;
+  width: 100%;
+}
+/* -----second section----- */
+#m_secondSection{
+  width: 100%;
+  background-color: #28B0DC;
+  margin: 50px auto;
+  border-top: 10px solid #37C8EC;
+}
+#m_s_image{
+  background-image: url('../icon/vaccination.jpg');
+  overflow: hidden;
+  height: 512px;
+  width: 60%;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#m_p_container{
+  float: right;
+  width: 25%;
+  
+  padding: 6%;
+  margin-right: 2%;
+}
+#m_p_container h1{
+  font-size: 40px;
+  margin: 10px;
+  font-weight: bolder;
+}
+#m_p_container p{
+  text-align: justify;
+  font-size: 17px;
+
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+/* -----Third Section */
+/* m_thirdSection */
+/* m_thirdSectionText */
+/* m_thirdSectionCards */
+#m_thirdSection{
+  width: 100%;
+  background-color: #28B0DC;
+  border-top: 10px solid #37C8EC;
+  margin: 50px auto;
+  min-height: 500px;
+}
+#marker{
+  margin: 0;
+  padding: 0;
+  background-color: #2990C3;
+  min-height: 100%;
+  height: 500px;
+  /* overflow: hidden; */
+  width: 5%;
+  float: left;
+}
+#m_thirdSectionText{
+  margin: 2%;
+  width: 30%;
+  text-align: justify;
+  display: inline-block;
+}
+#m_thirdSectionText h1{
+  font-size: 40px;
+  margin: 10px;
+  font-weight: bolder;
+}
+#m_thirdSectionText p{
+  font-size: 25px;
+}
+#m_thirdSectionCards{
+  display: inline-block;
+  width: 50%;
+}
+#d_s_1,#d_s_2,#d_s_3{
+  text-align: justify;
+  margin: 3%;
+  display: inline-block;
+  width: 20%;
+  padding: 26px;
+  padding-bottom: 48px;
+  background-color: #2990c36e;
+  /* min-height: 443px; */
+}
+#d_s_1:hover,#d_s_2:hover,#d_s_3:hover{
+  transition: all .2s ease-in-out;
+  border-top: 10px solid #37C8EC;
+}
+.d_s_3_h1{
+  font-size: 21px;
+  margin: 10px;
+  font-weight: bolder;
+  text-align: left;
+}
+#d_s_1 img,#d_s_2 img,#d_s_3 img{
+  width: 100%;
+  border-radius: 50%;
+}
+/* fourth section */
+/* m_fourthSection */
+/* m_four_text */
+/* m_four_news */
+
+#m_fourthSection{
+  margin: 25px 0px;
+  min-height: 100vh;
+  width: 100%;
+  border-top: 10px solid #37C8EC;
+  border-bottom: 10px solid #37C8EC;
+  background-color: #28B0DC;
+}
+#m_four_text{
+  float: left;
+  margin: 1%;
+  margin-top: 25px;
+  width: 40%;
+  min-height: 80vh;
+  border-top: 10px solid #37C8EC;
+}
+#m_four_text h1{
+  font-size: 25px;
+  margin: 10px;
+  font-weight: bolder;
+}
+#m_four_text p{
+  font-size: 20px;
+}
+#m_four_news {
+  float: right;
+  width: 40%;
+  background-color: rgba(128, 128, 128, 0.623);
+  min-height: 100vh;
+}
+.news{
+  background-color: #2990c36e;
+  border-radius: 2px;
+  border: solid 3px #2990C3;
+  /* padding: 5px; */
+  margin: 25px;
+  display: inline-block;
+  width: 90%;
+  height: 120px;
+}
+.news img{
+  float: left;
+  height: 100%;
+  width: 20%;
+  border: solid 1px blue;
+}
+.news h1{
+  font-size: 15px;
+  color: rgb(48, 48, 48);
+  margin: 10px;
+  font-weight: bolder;
+  display: inline-block;
+}
+#latestNews{
+  font-size: 25px;
+  margin: 2%;
+  font-weight: bolder;
+}
+.news p{
+  font-size: 20px;
+  margin: 5px;
+  margin-left: 120px;
+}
+.news:hover{
+  background-color:#2990C3 ;
+  transition: all .5s ease-in-out;
+  transform: scale(1.04);
+}
+/* ---------------------------------FAQ */
+.FAQ{
+  padding: 10px;
+}
+.FAQ:hover{
+  transition: all .5s ease-in-out;
+  transform: scale(1.04);
+}
+.FAQ h2{
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 5px;
+}
+.FAQ p{
+  background-color: #2990c36e;
+  padding: 10px;
+  text-align: justify;
+}
+/* white space */
+#whiteSpace{
+  margin: 5%;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #2990C3;
+    color: white;
+    border: solid #BFBFBF 2px;
+    transform: rotateY(180deg);
+  }
+
+
+.pAnim:hover{
+  transition: all .2s ease-in-out;
+    transform: scale(1.05);
+  }

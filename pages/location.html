@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccine Locations</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/location.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../icon/logo-small.png" alt="logo" id="logo">
+            <h1>MOROS COVID-19 VACCINE TRACKER </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="generalinfo.html">General Info</a></li>
+                <li><a style="color: #2267A5; font-weight: 1000;" href="location.html">Vaccine Centers</a></li>
+                <li><a href="profile.html">Profiles</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id='formContainer'>
+            <form id="locationForm">
+                <fieldset>
+                    <label for="vaccineLocs">Please choose a Province:</label>
+                    <select id="vaccineLocs" name="vaccineLocs">
+                        <option value="Amman">Amman</option>
+                        <option value="Irbid">Irbid</option>
+                        <option value="Alsalt">Alsalt</option>
+                        <option value="Jerash">Jerash</option>
+                        <option value="Zarqa">Zarqa</option>
+                        <option value="Tafila">Tafila</option>
+                        <option value="Ajloun">Ajloun</option>
+                        <option value="Aqaba">Aqaba</option>
+                        <option value="Karak">Karak</option>
+                        <option value="Madaba">Madaba</option>
+                        <option value="Maan">Maan</option>
+                        <option value="Mafraq">Mafraq</option>
+                    </select>
+
+                    <input type="submit" value="Submit" id='submitButton'>
+                </fieldset>
+            </form>
+        </div>
+        <section id="locationsContainer">
+
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><img src="../icon/UN.png" alt="footer_logo1"></li>
+            <li><img src="../icon/helthML.png" alt="footer_logo2"></li>
+            <li><img src="../icon/WHO.png" alt="footer_logo3"></li>
+        </ul>
+        <p> &copy; MOROS-V1 Corporation, All Rights Reserved.</p>       </footer>
+
+    <script src="../js/locations.js"></script>
+</body>
+
+</html>
