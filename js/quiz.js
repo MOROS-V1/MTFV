@@ -14,21 +14,21 @@ function Quiz(question, answers, correctAnswerV) {
         this.correctAnswer = answers[correctAnswerV],
         questionsArray.push(this)
 };
-let q1 = new Quiz('Question 1: ....', ['a', 'b', 'c', 'd'], 1);
-let q2 = new Quiz('Question 2: ....', ['a2', 'b2', 'c2', 'd2'], 1);
-let q3 = new Quiz('Question 3: ....', ['a3', 'b3', 'c3', 'd3'], 3);
-let q4 = new Quiz('Question 4: ....', ['a4', 'b4', 'c4', 'd4'], 1);
-let q5 = new Quiz('Question 5: ....', ['a5', 'b5', 'c5', 'd5'], 1);
-let q6 = new Quiz('Question 6: ....', ['a6', 'b6', 'c6', 'd6'], 3);
-let q7 = new Quiz('Question 7: ....', ['a7', 'b7', 'c7', 'd7'], 0);
-let q8 = new Quiz('Question 8: ....', ['a8', 'b8', 'c8', 'd8'], 2);
-let q9 = new Quiz('Question 9: ....', ['a9', 'b9', 'c9', 'd9'], 2);
-let q10 = new Quiz('Question 10: ....', ['a10', 'b10', 'c10', 'd10'], 0);
-let q11 = new Quiz('Question 11: ....', ['a11', 'b11', 'c11', 'd11'], 1);
-let q12 = new Quiz('Question 12: ....', ['a12', 'b12', 'c12', 'd12'], 2);
-let q13 = new Quiz('Question 13: ....', ['a13', 'b13', 'c13', 'd13'], 3);
-let q14 = new Quiz('Question 14: ....', ['a14', 'b14', 'c14', 'd14'], 1);
-let q15 = new Quiz('Question 15: ....', ['a15', 'b15', 'c15', 'd15'], 2);
+let q1 = new Quiz('Vaccine benefits:', ['A- It prevents you from contracting COVID-19', 'b- transmitting the virus to others', 'C- It causes death by Covid-19 disease', 'D. The virus spreads quickly'], 0);
+let q2 = new Quiz('Most common covid vaccines', ['A- Papilloma', 'B- Polio', 'C- Pfizer', 'D-Tdap'], 2);
+let q3 = new Quiz('Vaccine side effects:', ['A- Fever', 'b- headache', 'C- A + B + D', 'D- Muscle pain'], 2);
+let q4 = new Quiz('Ages allowed to take the vaccine:', ['A-18 years old', 'B - 30 years', 'C-A+B', 'D - 10 years'], 2);
+let q5 = new Quiz('There is an important procedure after taking the vaccine:', ['A - remove the mask', 'B - Adhere to the instructions for two weeks after taking the second dose.', 'C - Not adhering to the necessary rules after the first dose', 'D- All of the above are true'], 1);
+let q6 = new Quiz('People who should not take the corona vaccine:', ['A - People with severe allergies to vaccinations or some medicines and food.', 'b- Pregnant and lactating women.', 'c- Persons under the age of eighteen.', 'D- All of the above are correct'], 3);
+let q7 = new Quiz('You can register to receive the vaccine through:', ['A- Recording platform', 'b- Registration with the Ministry of Health', 'C- Registration by phone', 'D- Register via Facebook'], 0);
+let q8 = new Quiz('How to take the vaccine:', ['A- The vaccine is given by injection into the upper arm and into the muscle.', 'B- A + C + D', 'C- It is important that you get all the doses to ensure the effectiveness of the vaccine.', 'D- The second dose 21-28 days after the first dose.'], 1);
+let q9 = new Quiz('Among the centers where the vaccine will be available inside Amman:', ['A- Founder King Abdullah University Hospital', 'B- Prince Faisal Governmental Hospital.', 'C- Prince Hamzah Hospital', 'D- Jerash Comprehensive Health Center.'], 2);
+let q10 = new Quiz(' If I catch the Corona virus and recover, I must', ['A- Don\'t get vaccinated', 'B- I must register to receive the vaccination', 'C- Just keep taking vitamins', 'D- All of the above'], 1);
+let q11 = new Quiz('Which of the following is not a symptom of the corona vaccine?', ['A-Chills', 'B-Nausea', 'C-Vomiting', 'D-hypotension'], 3);
+let q12 = new Quiz('A vaccine that is 95% effective a week after the second dose of the vaccine', ['A- AstraZeneca', 'B- Pfizer', 'C- Sinopharm', 'D- None of the above'], 1);
+let q13 = new Quiz('COVID-19 vaccines contain', ['A-fetal tissue.', 'B-microchip to track the population.', 'C-weakened version of the virus', 'D-1 and 2'], 2);
+let q14 = new Quiz('There is a vaccine that relieves the symptoms of corona besides corona vaccines:', ['A-The annual influenza vaccination', 'B- Polio vaccine', 'C- Tuberculosis vaccine', 'D- A + C'], 0);
+let q15 = new Quiz(' People most at risk of developing severe symptoms', ['A - old age', 'b- Those who suffer from lung problems', 'C- Those who suffer from heart disease', 'D- All of the above are correct'], 3);
 // console.log(questionsArray);
 let chosenQ = [];
 let form = document.getElementById('quiz');
@@ -94,7 +94,7 @@ function handleSubmit(event) {
     }
     Swal.fire({
         title: `Your score is ${score} out of 10.`,
-        confirmButtonColor: '#F14C42',
+        confirmButtonColor: 'rgb(34, 103, 165)',
         showClass: {
           popup: 'animate__animated animate__fadeInDown'
         },

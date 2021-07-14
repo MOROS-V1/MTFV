@@ -1,12 +1,10 @@
 fieldset{
-  margin: 0;
-  position: relative;
-  left: 2%;
-  padding: 1em 2em;
-  border: solid 1px rgba(55, 200, 236);
-  border-radius: 6px;
-  width: 85%;
-  height: 95%;
+    margin: 28px 18px;
+    padding: 1em 2em;
+    border: solid 1px rgba(55, 200, 236);
+    border-radius: 6px;
+    width: 85%;
+    height: 95%;
 }
 legend {
     font-size: 1.25em;
@@ -20,18 +18,15 @@ label{
 
 
 form{
-  float: left;
+    /* float:left; */
     font-size: 20px;
     display: block;
-    background-color: #80808012;
+    background: rgb(179, 223, 235);
     box-shadow: 14px 14px 20px #cbced1;
     width: 120%;
-    height: 1202px;
-    margin: 0;
-    position: relative;
-    left: 10%;
-    margin-top: 10.2%;
-    margin-right: 10%;
+    height: 95%;
+    margin-left:10%;
+    margin-top: 10%;
 }
 
 form h3{
@@ -58,15 +53,13 @@ form h3{
     padding-right: 200px;
   }
  #contact{
-  margin-right: 6%;
-    margin-left: 0%;
-    /* border: 5px solid #cbced1; */
+    margin-right:10%;
+    border:  5px solid  #cbced1;
     float: right;
-    padding: 1% 1%;
+    padding: 10px 20px;
     height: 60%;
-    width: 19%;
-    margin-top: 5.5%;
-    background-color:#80808012;
+    width: 20%;
+    margin-top:5%;
  }
  #contact p{
   float:right;
@@ -82,9 +75,8 @@ form h3{
 
  }
  div p{
-  position: relative;
-  left: -9%;
-  top: 61px;
+     padding-top: 50px;
+     padding-left: 40px;
  }
  #submitbuttom{
     float: right;
