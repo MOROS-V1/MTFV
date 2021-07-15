@@ -3,6 +3,7 @@ body {
     font-family: 'Oswald', sans-serif;
     color: #1D1D1D;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body, html {
